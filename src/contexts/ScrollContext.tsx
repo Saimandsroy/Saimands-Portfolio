@@ -66,10 +66,11 @@ export function ScrollContextProvider({
         setScrollProgress((prev) => {
           setPreviousScrollProgress(prev);
 
-          // Read wheel event listener when it would otherwise be used up due to the option { once: true }
+          // Read wheel event listener when it would otherwise be used up due to the option { once: true } on first and last section
           if (
-            prev === AVAILABLE_SCROLLING_SECTIONS.length - 1 &&
-            isScrollingDown
+            (prev === AVAILABLE_SCROLLING_SECTIONS.length - 1 &&
+              isScrollingDown) ||
+            (prev === 0 && !isScrollingDown)
           ) {
             updateEffect((updater) => !updater);
             return prev;
@@ -95,6 +96,7 @@ export function ScrollContextProvider({
       });
     }
 
+    console.log(updater);
     // Prevent over firing the handleScroll event via debouncing
     debouncer(() => {
       window.addEventListener("wheel", handleScroll, { once: true });
