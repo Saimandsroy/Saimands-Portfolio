@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { flushSync } from "react-dom";
 
+import { useSettingsContext } from "@/contexts/SettingsContext";
 import { AVAILABLE_SCROLLING_SECTIONS } from "@/lib/constants";
 import { debouncer } from "@/lib/utils";
 
@@ -49,10 +50,11 @@ export function ScrollContextProvider({
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isScrollingPaused, setIsScrollingPaused] = useState(false);
   const [updater, updateEffect] = useState(false);
+  const { canStartCapturingScroll } = useSettingsContext();
 
   useEffect(() => {
     function handleScroll(e: WheelEvent) {
-      if (isScrollingPaused) return;
+      if (isScrollingPaused || !canStartCapturingScroll) return;
 
       const isZooming = e.ctrlKey;
       if (isZooming) return;
@@ -99,7 +101,7 @@ export function ScrollContextProvider({
     })?.();
 
     return () => window.removeEventListener("wheel", handleScroll);
-  }, [isScrollingPaused, updater]);
+  }, [isScrollingPaused, updater, canStartCapturingScroll]);
 
   return (
     <ScrollContext.Provider

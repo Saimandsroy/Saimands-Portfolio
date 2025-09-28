@@ -11,6 +11,7 @@ type SettingsContextReducerAction = {
     | "state/save"
     | "state/reset"
     | "experience/start"
+    | "experience/startCapturingScroll"
     | "experience/ignoreMobileWarning"
     | "settings/setGraphicsSettings"
     | "settings/setIsAudioEnabled"
@@ -42,6 +43,7 @@ type SettingsContext = AvailableGraphicsSetting & {
   hasIgnoredMobileWarning: boolean;
   hasLoaded: boolean;
   hasStartedExperience: boolean;
+  canStartCapturingScroll: boolean;
   dispatch: React.ActionDispatch<[action: SettingsContextReducerAction]>;
 };
 
@@ -85,6 +87,7 @@ const initialSettingsContext: SettingsContext = {
   hasIgnoredMobileWarning: false,
   hasLoaded: false,
   hasStartedExperience: false,
+  canStartCapturingScroll: false,
   dispatch: () => {},
 };
 
@@ -130,6 +133,10 @@ function reducer(
       return { ...state, hasStartedExperience: true };
     }
 
+    case "experience/startCapturingScroll": {
+      return { ...state, canStartCapturingScroll: true };
+    }
+
     case "experience/ignoreMobileWarning": {
       return { ...state, hasIgnoredMobileWarning: true };
     }
@@ -172,6 +179,17 @@ export function SettingsContextProvider({
   useEffect(() => {
     dispatch({ type: "state/load" });
   }, []);
+
+  // Allow capturing scroll events 3000ms after pressing the start button
+  useEffect(() => {
+    if (!state.hasStartedExperience) return;
+
+    const startCapturingScrollTimeoutId = setTimeout(() => {
+      dispatch({ type: "experience/startCapturingScroll" });
+    }, 3000);
+
+    return () => clearTimeout(startCapturingScrollTimeoutId);
+  }, [state.hasStartedExperience]);
 
   return (
     <SettingsContext.Provider
