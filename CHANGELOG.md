@@ -1,3 +1,18 @@
+## [1.1.1](https://github.com/MuchaSsak/muszarski.space/compare/v1.1.0...v1.1.1) (2025-09-28)
+
+
+### Bug Fixes
+
+* prevent scrolling on startup screen ([46d4b2a](https://github.com/MuchaSsak/muszarski.space/commit/46d4b2a9e951c261dc033da20993dcee2f8c02b0))
+* readd event listener on scrolling up in first section ([17129e4](https://github.com/MuchaSsak/muszarski.space/commit/17129e41384300b815a04b03a772775bf97b174e))
+
+
+### Reverts
+
+* Revert "style: fix comment typo" ([40bf97c](https://github.com/MuchaSsak/muszarski.space/commit/40bf97c6034837f40e3a205c6634356c1320a839))
+
+
+
 # [1.1.0](https://github.com/MuchaSsak/muszarski.space/compare/v1.0.0...v1.1.0) (2025-09-11)
 
 
