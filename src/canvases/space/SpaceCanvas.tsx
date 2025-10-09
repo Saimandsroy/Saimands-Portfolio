@@ -80,6 +80,7 @@ function SpaceCanvas() {
           {/* Lens flare */}
           <LensFlare
             {...lensFlareControls}
+            userData={{ lensflare: "no-occlusion" }}
             dirtTextureFile="/assets/textures/sun/lens_dirt_texture.jpg"
           />
         </>

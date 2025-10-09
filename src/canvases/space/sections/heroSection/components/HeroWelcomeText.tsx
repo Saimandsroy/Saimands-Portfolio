@@ -34,6 +34,7 @@ function HeroWelcomeText() {
       >
         <Billboard position={[11, -0.5, -12.5]}>
           <Text3D
+            userData={{ lensflare: "no-occlusion" }}
             curveSegments={4}
             bevelEnabled
             bevelSize={0.02}
@@ -56,6 +57,7 @@ function HeroWelcomeText() {
           </Text3D>
 
           <Text3D
+            userData={{ lensflare: "no-occlusion" }}
             curveSegments={4}
             height={0.05}
             bevelEnabled

@@ -39,7 +39,7 @@ function StarsModel() {
 
   return (
     <Environment background resolution={2048}>
-      <points>
+      <points userData={{ lensflare: "no-occlusion" }}>
         <bufferGeometry attach="geometry">
           <bufferAttribute
             attach="attributes-position"
