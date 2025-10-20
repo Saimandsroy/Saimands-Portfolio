@@ -1,3 +1,12 @@
+## [1.1.3](https://github.com/MuchaSsak/muszarski.space/compare/v1.1.2...v1.1.3) (2025-10-20)
+
+
+### Bug Fixes
+
+* align startup screen buttons properly ([d4ed4d6](https://github.com/MuchaSsak/muszarski.space/commit/d4ed4d63c290ec23a3eca7040e7df7f5d866bb62))
+
+
+
 ## [1.1.2](https://github.com/MuchaSsak/muszarski.space/compare/v1.1.1...v1.1.2) (2025-10-09)
 
 
