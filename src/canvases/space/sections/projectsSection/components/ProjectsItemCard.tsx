@@ -35,7 +35,7 @@ function ProjectsItemCard({
         "w-[36rem] [&:hover_img]:scale-110 gap-4 overflow-hidden bg-card/50 relative backdrop-blur-sm hover:[box-shadow:0_0_1rem_var(--primary),0_0_0.125rem_var(--foreground)] transition-[box-shadow] p-0",
         scrollProgress !== projectsListScrollProgress
           ? "pointer-events-none select-none"
-          : "pointer-events-auto"
+          : "pointer-events-auto",
       )}
     >
       {/* Thumbnail image */}
@@ -47,7 +47,7 @@ function ProjectsItemCard({
           "h-64 w-full overflow-hidden relative",
           scrollProgress !== projectsListScrollProgress
             ? "pointer-events-none"
-            : "pointer-events-auto"
+            : "pointer-events-auto",
         )}
       >
         <img
@@ -77,22 +77,24 @@ function ProjectsItemCard({
 
       <CardFooter className="justify-between text-muted-foreground pb-6 pt-2">
         {/* Soure code link button */}
-        <a
-          href={codeLink}
-          tabIndex={-1}
-          target="_blank"
-          className={
-            scrollProgress !== projectsListScrollProgress
-              ? "pointer-events-none"
-              : "pointer-events-auto"
-          }
-        >
-          <Button
-            variant="outline"
-            className="p-7 text-foreground rounded-xl text-xl"
+        {codeLink && (
+          <a
+            href={codeLink}
             tabIndex={-1}
-          >{t`Source code 💻`}</Button>
-        </a>
+            target="_blank"
+            className={
+              scrollProgress !== projectsListScrollProgress
+                ? "pointer-events-none"
+                : "pointer-events-auto"
+            }
+          >
+            <Button
+              variant="outline"
+              className="p-7 text-foreground rounded-xl text-xl"
+              tabIndex={-1}
+            >{t`Source code 💻`}</Button>
+          </a>
+        )}
 
         {/* View it live link button */}
         <a

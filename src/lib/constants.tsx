@@ -13,6 +13,7 @@ import {
   ThreeJsLogo,
   TypeScriptLogo,
 } from "@/components/icons";
+import ExpoLogo from "@/components/icons/ExpoLogo";
 
 // EmailJS
 export const EMAILJS_PUBLIC_KEY = "Unh7wKuX7D61UVGOX";
@@ -410,66 +411,6 @@ export const CERTIFICATES_LIST: CertificateData[] = [
     Icon: () => <span className="font-emoji">🧠</span>,
     isRelevant: false,
   },
-  {
-    Title: () => t`Learn to DJ With Just Your Laptop: No DJ Equipment Needed`,
-    authorName: "Jak Bradley",
-    websiteLink:
-      "https://www.udemy.com/course/no-dj-equipment-needed-dj-course/",
-    StartedDate: () =>
-      i18n.date(new Date("08-25-2025"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    EndedDate: () =>
-      i18n.date(new Date("08-26-2025"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    Icon: () => <span className="font-emoji">🎧</span>,
-    isRelevant: false,
-  },
-  {
-    Title: () => t`Speak Any Language in 10 Days - Conversational lvl [2024]`,
-    authorName: "Aleksander Garstka",
-    websiteLink:
-      "https://www.udemy.com/course/learn-how-to-speak-a-language-in-10-days/",
-    StartedDate: () =>
-      i18n.date(new Date("08-16-2025"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    EndedDate: () =>
-      i18n.date(new Date("08-18-2025"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    Icon: () => <span className="font-emoji">🌍</span>,
-    isRelevant: false,
-  },
-  {
-    Title: () => t`Three.js, React Three Fiber, Drei, React Spring & More`,
-    authorName: "Ahmad Al-shurafa",
-    websiteLink:
-      "https://www.udemy.com/course/learn-react-react-three-fiber-drei-react-spring-more/",
-    StartedDate: () =>
-      i18n.date(new Date("04-22-2024"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    EndedDate: () =>
-      i18n.date(new Date("05-04-2024"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    Icon: () => <ThreeJsLogo />,
-    isRelevant: false,
-  },
 ];
 
 // Projects
@@ -479,100 +420,9 @@ export type ProjectData = {
   Icons: () => React.ReactNode;
   thumbnailImgUrl: string;
   liveLink: string;
-  codeLink: string;
+  codeLink: string | null;
 };
 export const PROJECTS_LIST: ProjectData[] = [
-  {
-    Title: () => t`Youth Work Synergy`,
-    Description: () => (
-      <>
-        <span>{t`A website including 3D features made to promote a beautiful organiation in Luxemburg `}</span>
-        <span className="font-emoji">🇱🇺</span>
-      </>
-    ),
-    Icons: () => (
-      <>
-        <li>
-          <ThreeJsLogo className="size-9" />
-        </li>
-        <li>
-          <NextJsLogo className="size-9" />
-        </li>
-        <li>
-          <TailwindCssLogo className="size-9" />
-        </li>
-      </>
-    ),
-    codeLink: "https://github.com/MuchaSsak/yws.lu",
-    liveLink: "https://yws-lu.vercel.app",
-    thumbnailImgUrl: "/assets/pictures/yws_lu_thumbnail.jpg",
-  },
-  {
-    Title: () => t`Beniaminek 03 Screensaver`,
-    Description: () =>
-      t`3D screensaver for a sports club using GPGPU computing in R3F ⚡`,
-    Icons: () => (
-      <>
-        <li>
-          <ThreeJsLogo className="size-9" />
-        </li>
-        <li>
-          <TypeScriptLogo className="size-9" />
-        </li>
-        <li>
-          <ReactLogo className="size-9" />
-        </li>
-        <li>
-          <TailwindCssLogo className="size-9" />
-        </li>
-      </>
-    ),
-    codeLink: "https://github.com/MuchaSsak/beniaminek03-screensaver",
-    liveLink: "https://beniaminek03-screensaver.vercel.app",
-    thumbnailImgUrl: "/assets/pictures/beniaminek03_screensaver_thumbnail.jpg",
-  },
-  {
-    Title: () => t`LingoType`,
-    Description: () =>
-      t`A foreign language learning app for vocabulary reinforcement by typing ⌨️`,
-    Icons: () => (
-      <>
-        <li>
-          <ThreeJsLogo className="size-9" />
-        </li>
-        <li>
-          <NextJsLogo className="size-9" />
-        </li>
-        <li>
-          <TanstackQueryLogo className="size-9" />
-        </li>
-      </>
-    ),
-    codeLink: "https://github.com/MuchaSsak/lingotype",
-    liveLink: "https://lingotype.vercel.app",
-    thumbnailImgUrl: "/assets/pictures/lingotype_thumbnail.jpg",
-  },
-  {
-    Title: () => t`2D Space Portfolio`,
-    Description: () =>
-      t`A fully animated Next.js portfolio with the help of ThreeJS, Framer Motion, shadcn/ui and clever usage of .webm videos 🌌`,
-    Icons: () => (
-      <>
-        <li>
-          <ThreeJsLogo className="size-9" />
-        </li>
-        <li>
-          <NextJsLogo className="size-9" />
-        </li>
-        <li>
-          <TailwindCssLogo className="size-9" />
-        </li>
-      </>
-    ),
-    codeLink: "https://github.com/MuchaSsak/2d-space-portfolio",
-    liveLink: OLD_PORTFOLIO_WEBSITE_LINK,
-    thumbnailImgUrl: "/assets/pictures/space_portfolio_thumbnail.jpg",
-  },
   {
     Title: () => t`React ClickMe`,
     Description: () =>
@@ -620,5 +470,118 @@ export const PROJECTS_LIST: ProjectData[] = [
     codeLink: "https://github.com/MuchaSsak/home-budget",
     liveLink: "https://mm-homebudget.vercel.app",
     thumbnailImgUrl: "/assets/pictures/home_budget_thumbnail.jpg",
+  },
+  {
+    Title: () => t`LingoType`,
+    Description: () =>
+      t`A foreign language learning app for vocabulary reinforcement by typing ⌨️`,
+    Icons: () => (
+      <>
+        <li>
+          <ThreeJsLogo className="size-9" />
+        </li>
+        <li>
+          <NextJsLogo className="size-9" />
+        </li>
+        <li>
+          <TanstackQueryLogo className="size-9" />
+        </li>
+      </>
+    ),
+    codeLink: "https://github.com/MuchaSsak/lingotype",
+    liveLink: "https://lingotype.vercel.app",
+    thumbnailImgUrl: "/assets/pictures/lingotype_thumbnail.jpg",
+  },
+
+  {
+    Title: () => t`Youth Work Synergy`,
+    Description: () => (
+      <>
+        <span>{t`A website including 3D features made to promote a beautiful organiation in Luxemburg `}</span>
+        <span className="font-emoji">🇱🇺</span>
+      </>
+    ),
+    Icons: () => (
+      <>
+        <li>
+          <ThreeJsLogo className="size-9" />
+        </li>
+        <li>
+          <NextJsLogo className="size-9" />
+        </li>
+        <li>
+          <TailwindCssLogo className="size-9" />
+        </li>
+      </>
+    ),
+    codeLink: "https://github.com/MuchaSsak/yws.lu",
+    liveLink: "https://yws.lu",
+    thumbnailImgUrl: "/assets/pictures/yws_lu_thumbnail.jpg",
+  },
+  {
+    Title: () => t`Enrollo`,
+    Description: () =>
+      t`An affiliate marketing application built in Expo for the web, Android and iOS`,
+    Icons: () => (
+      <>
+        <li>
+          <ExpoLogo className="size-9" />
+        </li>
+        <li>
+          <ReactLogo className="size-9" />
+        </li>
+        <li>
+          <TailwindCssLogo className="size-9" />
+        </li>
+      </>
+    ),
+    codeLink: null,
+    liveLink: "https://enrollo.pl",
+    thumbnailImgUrl: "/assets/pictures/enrollo_thumbnail.jpg",
+  },
+  {
+    Title: () => t`2D Space Portfolio`,
+    Description: () =>
+      t`A fully animated Next.js portfolio with the help of ThreeJS, Framer Motion, shadcn/ui and clever usage of .webm videos 🌌`,
+    Icons: () => (
+      <>
+        <li>
+          <ThreeJsLogo className="size-9" />
+        </li>
+        <li>
+          <NextJsLogo className="size-9" />
+        </li>
+        <li>
+          <TailwindCssLogo className="size-9" />
+        </li>
+      </>
+    ),
+    codeLink: "https://github.com/MuchaSsak/2d-space-folio",
+    liveLink: OLD_PORTFOLIO_WEBSITE_LINK,
+    thumbnailImgUrl: "/assets/pictures/space_portfolio_thumbnail.jpg",
+  },
+  {
+    Title: () => t`Beniaminek 03 Screensaver`,
+    Description: () =>
+      t`3D screensaver for a sports club using GPGPU computing in R3F ⚡`,
+    Icons: () => (
+      <>
+        <li>
+          <ThreeJsLogo className="size-9" />
+        </li>
+        <li>
+          <TypeScriptLogo className="size-9" />
+        </li>
+        <li>
+          <ReactLogo className="size-9" />
+        </li>
+        <li>
+          <TailwindCssLogo className="size-9" />
+        </li>
+      </>
+    ),
+    codeLink: "https://github.com/MuchaSsak/beniaminek03-screensaver",
+    liveLink: "https://beniaminek03-screensaver.vercel.app",
+    thumbnailImgUrl: "/assets/pictures/beniaminek03_screensaver_thumbnail.jpg",
   },
 ];

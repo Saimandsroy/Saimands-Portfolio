@@ -47,7 +47,7 @@ export function ScrollContextProvider({
   children: React.ReactNode;
 }) {
   const [previousScrollProgress, setPreviousScrollProgress] = useState(0);
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const [scrollProgress, setScrollProgress] = useState(9);
   const [isScrollingPaused, setIsScrollingPaused] = useState(false);
   const [updater, updateEffect] = useState(false);
   const { canStartCapturingScroll } = useSettingsContext();
@@ -128,7 +128,7 @@ export function useScrollContext() {
   const context = useContext(ScrollContext);
   if (context === undefined)
     throw new Error(
-      "useScrollContext was used outside of ScrollContextProvider!"
+      "useScrollContext was used outside of ScrollContextProvider!",
     );
   return context;
 }

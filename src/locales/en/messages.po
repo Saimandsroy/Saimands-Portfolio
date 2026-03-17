@@ -17,27 +17,27 @@ msgstr ""
 msgid " for amateur photography of those places "
 msgstr " for amateur photography of those places "
 
-#: src/lib/constants.tsx:518
+#: src/lib/constants.tsx:543
 msgid "2D Space Portfolio"
 msgstr "2D Space Portfolio"
 
-#: src/lib/constants.tsx:475
+#: src/lib/constants.tsx:566
 msgid "3D screensaver for a sports club using GPGPU computing in R3F ⚡"
 msgstr "3D screensaver for a sports club using GPGPU computing in R3F ⚡"
 
-#: src/lib/constants.tsx:499
+#: src/lib/constants.tsx:477
 msgid "A foreign language learning app for vocabulary reinforcement by typing ⌨️"
 msgstr "A foreign language learning app for vocabulary reinforcement by typing ⌨️"
 
-#: src/lib/constants.tsx:520
+#: src/lib/constants.tsx:545
 msgid "A fully animated Next.js portfolio with the help of ThreeJS, Framer Motion, shadcn/ui and clever usage of .webm videos 🌌"
 msgstr "A fully animated Next.js portfolio with the help of ThreeJS, Framer Motion, shadcn/ui and clever usage of .webm videos 🌌"
 
-#: src/lib/constants.tsx:541
+#: src/lib/constants.tsx:429
 msgid "A react library full of highly customizable and animated buttons out of the box. This project includes an SPA for documentation and an NPM package 👉"
 msgstr "A react library full of highly customizable and animated buttons out of the box. This project includes an SPA for documentation and an NPM package 👉"
 
-#: src/lib/constants.tsx:451
+#: src/lib/constants.tsx:500
 msgid "A website including 3D features made to promote a beautiful organiation in Luxemburg "
 msgstr "A website including 3D features made to promote a beautiful organiation in Luxemburg "
 
@@ -45,20 +45,24 @@ msgstr "A website including 3D features made to promote a beautiful organiation 
 msgid "About me "
 msgstr "About me "
 
-#: src/lib/constants.tsx:143
-#: src/lib/constants.tsx:180
+#: src/lib/constants.tsx:144
+#: src/lib/constants.tsx:181
 msgid "adaptibility"
 msgstr "adaptibility"
 
-#: src/lib/constants.tsx:258
+#: src/lib/constants.tsx:259
 msgid "Alternative Participation of Rural Youth in Bakuriani, Georgia"
 msgstr "Alternative Participation of Rural Youth in Bakuriani, Georgia"
 
-#: src/lib/constants.tsx:565
+#: src/lib/constants.tsx:524
+msgid "An affiliate marketing application built in Expo for the web, Android and iOS"
+msgstr "An affiliate marketing application built in Expo for the web, Android and iOS"
+
+#: src/lib/constants.tsx:453
 msgid "An SPA for managing your finances by taking track of your budgets and expenses. Utilizes the browser's localStorage and advanced UI state using React's Context API with useReducer 💸"
 msgstr "An SPA for managing your finances by taking track of your budgets and expenses. Utilizes the browser's localStorage and advanced UI state using React's Context API with useReducer 💸"
 
-#: src/lib/constants.tsx:131
+#: src/lib/constants.tsx:132
 msgid "analyzing nearby threats to the animals and getting rid of them"
 msgstr "analyzing nearby threats to the animals and getting rid of them"
 
@@ -66,11 +70,11 @@ msgstr "analyzing nearby threats to the animals and getting rid of them"
 msgid "are licensed under"
 msgstr "are licensed under"
 
-#: src/lib/constants.tsx:91
+#: src/lib/constants.tsx:92
 msgid "attending meetings with volunteers"
 msgstr "attending meetings with volunteers"
 
-#: src/lib/constants.tsx:134
+#: src/lib/constants.tsx:135
 msgid "attending mentor on-site and onine meetings"
 msgstr "attending mentor on-site and onine meetings"
 
@@ -78,7 +82,7 @@ msgstr "attending mentor on-site and onine meetings"
 msgid "Audio settings"
 msgstr "Audio settings"
 
-#: src/lib/constants.tsx:473
+#: src/lib/constants.tsx:564
 msgid "Beniaminek 03 Screensaver"
 msgstr "Beniaminek 03 Screensaver"
 
@@ -86,7 +90,7 @@ msgstr "Beniaminek 03 Screensaver"
 msgid "Beyond technology, I enjoy a range of other activites including working out, traveling, photography, swimming and many more! "
 msgstr "Beyond technology, I enjoy a range of other activites including working out, traveling, photography, swimming and many more! "
 
-#: src/lib/constants.tsx:166
+#: src/lib/constants.tsx:167
 msgid "Bike courier"
 msgstr "Bike courier"
 
@@ -120,7 +124,7 @@ msgstr "check out my older portfolio 🚀"
 msgid "Cheers to them!"
 msgstr "Cheers to them!"
 
-#: src/lib/constants.tsx:132
+#: src/lib/constants.tsx:133
 msgid "cleaning up local beaches from garbage"
 msgstr "cleaning up local beaches from garbage"
 
@@ -136,11 +140,11 @@ msgstr "Click on the asteroids for more details!"
 msgid "Close"
 msgstr "Close"
 
-#: src/lib/constants.tsx:335
+#: src/lib/constants.tsx:336
 msgid "Complete Blender Megacourse: Beginner to Expert"
 msgstr "Complete Blender Megacourse: Beginner to Expert"
 
-#: src/lib/constants.tsx:356
+#: src/lib/constants.tsx:357
 msgid "CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam"
 msgstr "CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam"
 
@@ -152,7 +156,7 @@ msgstr "Contact"
 msgid "Couldn't find results"
 msgstr "Couldn't find results"
 
-#: src/lib/constants.tsx:89
+#: src/lib/constants.tsx:90
 msgid "creating spreadsheets"
 msgstr "creating spreadsheets"
 
@@ -160,16 +164,16 @@ msgstr "creating spreadsheets"
 msgid "Credits 💖"
 msgstr "Credits 💖"
 
-#: src/lib/constants.tsx:178
+#: src/lib/constants.tsx:179
 msgid "cycling"
 msgstr "cycling"
 
-#: src/lib/constants.tsx:169
+#: src/lib/constants.tsx:170
 msgid "Delivering orders via the partnered mobile application — Glovo."
 msgstr "Delivering orders via the partnered mobile application — Glovo."
 
 #: src/components/AnimateDocumentTitle.tsx:28
-#: src/components/StartupScreen.tsx:146
+#: src/components/StartupScreen.tsx:154
 msgid "Deploying..."
 msgstr "Deploying..."
 
@@ -181,15 +185,15 @@ msgstr "Deploying...."
 msgid "Deploying....."
 msgstr "Deploying....."
 
-#: src/lib/constants.tsx:87
+#: src/lib/constants.tsx:88
 msgid "developing a website"
 msgstr "developing a website"
 
-#: src/lib/constants.tsx:219
+#: src/lib/constants.tsx:220
 msgid "Developing Infrastructure to Work with Youth in Daugirdiškės, Lithuania"
 msgstr "Developing Infrastructure to Work with Youth in Daugirdiškės, Lithuania"
 
-#: src/lib/constants.tsx:238
+#: src/lib/constants.tsx:239
 msgid "Digital Youth Work Methods in Saraiķi, Latvia"
 msgstr "Digital Youth Work Methods in Saraiķi, Latvia"
 
@@ -209,11 +213,15 @@ msgstr "e.g. Order for a website"
 msgid "Enable sounds"
 msgstr "Enable sounds"
 
-#: src/lib/constants.tsx:123
+#: src/lib/constants.tsx:522
+msgid "Enrollo"
+msgstr "Enrollo"
+
+#: src/lib/constants.tsx:124
 msgid "European Solidarity Corps group volunteer"
 msgstr "European Solidarity Corps group volunteer"
 
-#: src/lib/constants.tsx:98
+#: src/lib/constants.tsx:99
 msgid "flexibility"
 msgstr "flexibility"
 
@@ -221,8 +229,8 @@ msgstr "flexibility"
 msgid "For a more responsive and lighter website, "
 msgstr "For a more responsive and lighter website, "
 
-#: src/lib/constants.tsx:100
-#: src/lib/constants.tsx:141
+#: src/lib/constants.tsx:101
+#: src/lib/constants.tsx:142
 msgid "foreign languages"
 msgstr "foreign languages"
 
@@ -233,11 +241,11 @@ msgstr "foreign languages"
 msgid "from"
 msgstr "from"
 
-#: src/lib/constants.tsx:96
+#: src/lib/constants.tsx:97
 msgid "front-end development"
 msgstr "front-end development"
 
-#: src/components/StartupScreen.tsx:165
+#: src/components/StartupScreen.tsx:168
 msgid "Graphics"
 msgstr "Graphics"
 
@@ -245,19 +253,19 @@ msgstr "Graphics"
 msgid "Graphics settings"
 msgstr "Graphics settings"
 
-#: src/lib/constants.tsx:99
+#: src/lib/constants.tsx:100
 msgid "helpfulness"
 msgstr "helpfulness"
 
-#: src/lib/constants.tsx:88
+#: src/lib/constants.tsx:89
 msgid "helping other employees with various problems"
 msgstr "helping other employees with various problems"
 
-#: src/contexts/SettingsContext.tsx:65
+#: src/contexts/SettingsContext.tsx:67
 msgid "High graphics"
 msgstr "High graphics"
 
-#: src/lib/constants.tsx:563
+#: src/lib/constants.tsx:451
 msgid "Home Budget"
 msgstr "Home Budget"
 
@@ -287,7 +295,7 @@ msgstr "is licensed under"
 msgid "It appears that your device is incompatible with this experience. This warning is caused by your screen resolution being smaller in width than recommended. It's likely you're viewing this on a mobile device, which is problematic for this 3D web application mainly for two reasons:"
 msgstr "It appears that your device is incompatible with this experience. This warning is caused by your screen resolution being smaller in width than recommended. It's likely you're viewing this on a mobile device, which is problematic for this 3D web application mainly for two reasons:"
 
-#: src/lib/constants.tsx:97
+#: src/lib/constants.tsx:98
 msgid "IT troubleshooting"
 msgstr "IT troubleshooting"
 
@@ -295,7 +303,7 @@ msgstr "IT troubleshooting"
 msgid "Job Experience"
 msgstr "Job Experience"
 
-#: src/lib/constants.tsx:133
+#: src/lib/constants.tsx:134
 msgid "keeping the volunteers' living space tidy"
 msgstr "keeping the volunteers' living space tidy"
 
@@ -303,7 +311,7 @@ msgstr "keeping the volunteers' living space tidy"
 msgid "language"
 msgstr "language"
 
-#: src/components/StartupScreen.tsx:159
+#: src/components/StartupScreen.tsx:162
 msgid "Language"
 msgstr "Language"
 
@@ -312,16 +320,20 @@ msgid "Learn more"
 msgstr "Learn more"
 
 #: src/lib/constants.tsx:376
-msgid "Learn to DJ With Just Your Laptop: No DJ Equipment Needed"
-msgstr "Learn to DJ With Just Your Laptop: No DJ Equipment Needed"
+#~ msgid "Learn to DJ With Just Your Laptop: No DJ Equipment Needed"
+#~ msgstr "Learn to DJ With Just Your Laptop: No DJ Equipment Needed"
 
-#: src/lib/constants.tsx:497
+#: src/lib/constants.tsx:475
 msgid "LingoType"
 msgstr "LingoType"
 
-#: src/contexts/SettingsContext.tsx:54
+#: src/contexts/SettingsContext.tsx:56
 msgid "Low graphics"
 msgstr "Low graphics"
+
+#: src/lib/constants.tsx:396
+msgid "Marketing Psychology and Consumer Behavior"
+msgstr "Marketing Psychology and Consumer Behavior"
 
 #: src/canvases/space/sections/contactSection/components/ContactForm.tsx:172
 msgid "Message"
@@ -335,7 +347,7 @@ msgstr "Message must be at least 3 characters long."
 msgid "Message must be at max 2048 characters long."
 msgstr "Message must be at max 2048 characters long."
 
-#: src/lib/constants.tsx:129
+#: src/lib/constants.tsx:130
 msgid "monitoring sea turtles nests"
 msgstr "monitoring sea turtles nests"
 
@@ -351,7 +363,7 @@ msgstr "My name's Mateusz Muszarski and I'm passionate about programming as well
 msgid "My primary focus lies in full-stack and creative web development, however, I also learned the fundamentals in other digital areas such as 3D computer graphics, graphic design, photo or video editing. "
 msgstr "My primary focus lies in full-stack and creative web development, however, I also learned the fundamentals in other digital areas such as 3D computer graphics, graphic design, photo or video editing. "
 
-#: src/lib/constants.tsx:173
+#: src/lib/constants.tsx:174
 msgid "obeying traffic laws"
 msgstr "obeying traffic laws"
 
@@ -375,11 +387,11 @@ msgstr "other countries too!"
 msgid "Planet textures by"
 msgstr "Planet textures by"
 
-#: src/lib/constants.tsx:83
+#: src/lib/constants.tsx:84
 msgid "Practices for programming and social skills."
 msgstr "Practices for programming and social skills."
 
-#: src/lib/constants.tsx:81
+#: src/lib/constants.tsx:82
 msgid "Programmer (intern)"
 msgstr "Programmer (intern)"
 
@@ -387,19 +399,19 @@ msgstr "Programmer (intern)"
 msgid "Projects"
 msgstr "Projects"
 
-#: src/lib/constants.tsx:135
+#: src/lib/constants.tsx:136
 msgid "promoting our home town and organizing events"
 msgstr "promoting our home town and organizing events"
 
-#: src/lib/constants.tsx:539
+#: src/lib/constants.tsx:427
 msgid "React ClickMe"
 msgstr "React ClickMe"
 
-#: src/lib/constants.tsx:130
+#: src/lib/constants.tsx:131
 msgid "rescuing hatchlings"
 msgstr "rescuing hatchlings"
 
-#: src/lib/constants.tsx:126
+#: src/lib/constants.tsx:127
 msgid "Rescuing threatened species of sea turtles and cleaning up the local environment alongside other foreign volunteers."
 msgstr "Rescuing threatened species of sea turtles and cleaning up the local environment alongside other foreign volunteers."
 
@@ -415,7 +427,7 @@ msgstr "SCROLL"
 msgid "Search"
 msgstr "Search"
 
-#: src/lib/constants.tsx:144
+#: src/lib/constants.tsx:145
 msgid "self-motivation"
 msgstr "self-motivation"
 
@@ -441,24 +453,24 @@ msgstr "Something went wrong with sending the mail!"
 msgid "Sound Effect by"
 msgstr "Sound Effect by"
 
-#: src/components/StartupScreen.tsx:171
+#: src/components/StartupScreen.tsx:174
 msgid "Sounds"
 msgstr "Sounds"
 
-#: src/canvases/space/sections/projectsSection/components/ProjectsItemCard.tsx:94
+#: src/canvases/space/sections/projectsSection/components/ProjectsItemCard.tsx:95
 msgid "Source code 💻"
 msgstr "Source code 💻"
 
 #: src/lib/constants.tsx:396
-msgid "Speak Any Language in 10 Days - Conversational lvl [2024]"
-msgstr "Speak Any Language in 10 Days - Conversational lvl [2024]"
+#~ msgid "Speak Any Language in 10 Days - Conversational lvl [2024]"
+#~ msgstr "Speak Any Language in 10 Days - Conversational lvl [2024]"
 
-#: src/lib/constants.tsx:80
-#: src/lib/constants.tsx:165
+#: src/lib/constants.tsx:81
+#: src/lib/constants.tsx:166
 msgid "Starogard Gdański, Pomerania, Poland"
 msgstr "Starogard Gdański, Pomerania, Poland"
 
-#: src/components/StartupScreen.tsx:182
+#: src/components/StartupScreen.tsx:185
 msgid "START"
 msgstr "START"
 
@@ -478,19 +490,19 @@ msgstr "Subject must be at max 64 characters long."
 msgid "Successfully sent the mail!"
 msgstr "Successfully sent the mail!"
 
-#: src/lib/constants.tsx:136
+#: src/lib/constants.tsx:137
 msgid "taking pictures and videos for the national agency"
 msgstr "taking pictures and videos for the national agency"
 
-#: src/lib/constants.tsx:86
+#: src/lib/constants.tsx:87
 msgid "technical support"
 msgstr "technical support"
 
-#: src/lib/constants.tsx:316
+#: src/lib/constants.tsx:317
 msgid "The Complete JavaScript Course 2023: From Zero to Expert!"
 msgstr "The Complete JavaScript Course 2023: From Zero to Expert!"
 
-#: src/lib/constants.tsx:297
+#: src/lib/constants.tsx:298
 msgid "The Ultimate React Course 2024: React, Next.js, Redux & More"
 msgstr "The Ultimate React Course 2024: React, Next.js, Redux & More"
 
@@ -506,24 +518,28 @@ msgstr "The Ultimate React Course 2024: React, Next.js, Redux & More"
 msgid "This action cannot be undone. This will permanently delete all of your local storage data and totally refresh the experience."
 msgstr "This action cannot be undone. This will permanently delete all of your local storage data and totally refresh the experience."
 
-#: src/lib/constants.tsx:277
+#: src/lib/constants.tsx:278
 msgid "Three.js Journey — Learn WebGL with Three.js"
 msgstr "Three.js Journey — Learn WebGL with Three.js"
 
 #: src/lib/constants.tsx:416
-msgid "Three.js, React Three Fiber, Drei, React Spring & More"
-msgstr "Three.js, React Three Fiber, Drei, React Spring & More"
+#~ msgid "Three.js, React Three Fiber, Drei, React Spring & More"
+#~ msgstr "Three.js, React Three Fiber, Drei, React Spring & More"
 
-#: src/lib/constants.tsx:142
-#: src/lib/constants.tsx:179
+#: src/lib/constants.tsx:143
+#: src/lib/constants.tsx:180
 msgid "time management"
 msgstr "time management"
 
-#: src/lib/constants.tsx:172
+#: src/lib/constants.tsx:376
+msgid "UX Writing: Microcopy, User Research, Accessibility & More"
+msgstr "UX Writing: Microcopy, User Research, Accessibility & More"
+
+#: src/lib/constants.tsx:173
 msgid "verifying packages integrity"
 msgstr "verifying packages integrity"
 
-#: src/canvases/space/sections/projectsSection/components/ProjectsItemCard.tsx:113
+#: src/canvases/space/sections/projectsSection/components/ProjectsItemCard.tsx:115
 msgid "View it live 🚀"
 msgstr "View it live 🚀"
 
@@ -539,14 +555,14 @@ msgstr "Visit old portfolio"
 msgid "Volume"
 msgstr "Volume"
 
-#: src/lib/constants.tsx:90
+#: src/lib/constants.tsx:91
 msgid "writing and creating social media posts"
 msgstr "writing and creating social media posts"
 
-#: src/lib/constants.tsx:199
+#: src/lib/constants.tsx:200
 msgid "Youth Entrepreneurship in Palanga, Lithuania"
 msgstr "Youth Entrepreneurship in Palanga, Lithuania"
 
-#: src/lib/constants.tsx:448
+#: src/lib/constants.tsx:497
 msgid "Youth Work Synergy"
 msgstr "Youth Work Synergy"

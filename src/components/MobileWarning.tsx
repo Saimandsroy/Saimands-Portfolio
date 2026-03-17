@@ -12,7 +12,7 @@ function MobileWarning() {
   const { t } = useLingui();
   const { dispatch, hasIgnoredMobileWarning } = useSettingsContext();
   const [isWarning, setIsWarning] = useState(
-    () => window.innerWidth > maxWidthForWarning
+    () => window.innerWidth > maxWidthForWarning,
   );
 
   function handleIgnoreWarning() {
@@ -78,7 +78,7 @@ function MobileWarning() {
         >
           <img
             src="/assets/pictures/space_portfolio_thumbnail.jpg"
-            alt="Preview thumbnail image of the old 2D space portfolio of muszarski.space"
+            alt="Preview thumbnail image of the old 2D space portfolio of matmuszarski.space"
             className="w-full h-full transition-transform object-cover duration-300 ease-in-out"
           />
           <div className="h-full w-full bg-gradient-to-t from-background to-transparent to-50% absolute left-0 bottom-0" />

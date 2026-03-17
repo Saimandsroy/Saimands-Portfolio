@@ -2,7 +2,7 @@
 
 A fully immersive 3D portfolio themed around space. Built using React + WebGL/Three.js
 
-If you wish to see this project live, [click here](https://www.muszarski.space) 🚀
+If you wish to see this project live, [click here](https://www.matmuszarski.space) 🚀
 
 ## Acknowledgements
 
