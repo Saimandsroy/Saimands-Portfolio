@@ -147,37 +147,36 @@ export const JOB_EXPERIENCE_LIST = {
     ),
   } as JobExperienceItemDialogData,
 
-  evelstar: {
-    logoImgSrc: "/assets/textures/asteroids/evelstar_logo.png",
-    learnMoreUrl: "https://about.glovoapp.com/how-we-ride/couriers/",
-    countryEmoji: "🇵🇱",
+  ruigrok: {
+    logoImgSrc:
+      "https://speciaalreiniging.nl/wp-content/uploads/2023/10/Ruigrok_logo-clear.png",
+    learnMoreUrl: "https://www.ruigrokpraca.pl/",
+    countryEmoji: "🇳🇱",
     StartedDate: () =>
-      i18n.date(new Date("06-25-2025"), {
+      i18n.date(new Date("12-13-2025"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
     EndedDate: () =>
-      i18n.date(new Date("07-12-2025"), {
+      i18n.date(new Date("02-08-2026"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
-    Location: () => t`Starogard Gdański, Pomerania, Poland`,
+    Location: () => t`Aalsmeer, Netherlands`,
     Occupation: () => t`Bike courier`,
-    company: "Evelstar Sp. z o.o.",
-    Description: () =>
-      t`Delivering orders via the partnered mobile application — Glovo.`,
+    company: "Ruigrok",
+    Description: () => t`Packaging flowers in the Dutch factories`,
     Responsibilities: () => (
       <>
         <li>{t`verifying packages integrity`}</li>
-        <li>{t`obeying traffic laws`}</li>
+        <li>{t`delivering crates to specific cold rooms`}</li>
+        <li>{t`avoiding the whole process from stopping or being delayed`}</li>
       </>
     ),
     SkillsNeeded: () => (
       <>
-        <li>{t`cycling`}</li>
-        <li>{t`time management`}</li>
         <li>{t`adaptibility`}</li>
       </>
     ),

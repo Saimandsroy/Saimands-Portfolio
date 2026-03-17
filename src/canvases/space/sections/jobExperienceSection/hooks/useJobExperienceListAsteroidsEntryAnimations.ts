@@ -7,11 +7,11 @@ import { useScrollContext } from "@/contexts/ScrollContext";
 function useJobExperienceListAsteroidsEntryAnimations({
   beniaminekAsteroidRef,
   escAsteroidRef,
-  evelstarAsteroidRef,
+  ruigrokAsteroidRef,
 }: {
   beniaminekAsteroidRef: React.RefObject<THREE.Group<THREE.Object3DEventMap>>;
   escAsteroidRef: React.RefObject<THREE.Group<THREE.Object3DEventMap>>;
-  evelstarAsteroidRef: React.RefObject<THREE.Group<THREE.Object3DEventMap>>;
+  ruigrokAsteroidRef: React.RefObject<THREE.Group<THREE.Object3DEventMap>>;
 }) {
   const { scrollProgress } = useScrollContext();
 
@@ -19,7 +19,7 @@ function useJobExperienceListAsteroidsEntryAnimations({
     if (
       !beniaminekAsteroidRef.current ||
       !escAsteroidRef.current ||
-      !evelstarAsteroidRef.current
+      !ruigrokAsteroidRef.current
     )
       return;
 
@@ -43,8 +43,8 @@ function useJobExperienceListAsteroidsEntryAnimations({
         duration: 3,
       });
 
-      // Evelstar
-      gsap.to(evelstarAsteroidRef.current.position, {
+      // ruigrok
+      gsap.to(ruigrokAsteroidRef.current.position, {
         ease: "sine.out",
         x: 6,
         y: 0.8,
@@ -70,8 +70,8 @@ function useJobExperienceListAsteroidsEntryAnimations({
         duration: 3,
       });
 
-      // Evelstar
-      gsap.to(evelstarAsteroidRef.current.position, {
+      // ruigrok
+      gsap.to(ruigrokAsteroidRef.current.position, {
         ease: "sine.out",
         x: -15,
         y: 0,
@@ -83,7 +83,7 @@ function useJobExperienceListAsteroidsEntryAnimations({
     scrollProgress,
     beniaminekAsteroidRef,
     escAsteroidRef,
-    evelstarAsteroidRef,
+    ruigrokAsteroidRef,
   ]);
 }
 

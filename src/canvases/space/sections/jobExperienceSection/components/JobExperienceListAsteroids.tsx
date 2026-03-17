@@ -18,11 +18,11 @@ import {
 } from "@/lib/constants";
 
 function JobExperienceListAsteroids() {
-  const [beniaminekTexture, escTexture, evelstarTexture] =
+  const [beniaminekTexture, escTexture, ruigrokTexture] =
     useLoadJobExperienceListAsteroidsTextures();
   const beniaminekAsteroidRef = useRef<THREE.Group>(null);
   const escAsteroidRef = useRef<THREE.Group>(null);
-  const evelstarAsteroidRef = useRef<THREE.Group>(null);
+  const ruigrokAsteroidRef = useRef<THREE.Group>(null);
 
   const [isOpenJobExperienceItemDialog, setIsOpenJobExperienceItemDialog] =
     useState(false);
@@ -48,7 +48,7 @@ function JobExperienceListAsteroids() {
   useJobExperienceListAsteroidsEntryAnimations({
     beniaminekAsteroidRef,
     escAsteroidRef,
-    evelstarAsteroidRef,
+    ruigrokAsteroidRef,
   });
 
   // Hide text when the current section viewed is not appriopriate for it to appear
@@ -59,7 +59,7 @@ function JobExperienceListAsteroids() {
     [
       jobExperienceTitleScrollProgress,
       jobExperienceDownloadResumeScrollProgress,
-    ]
+    ],
   );
   if (!isRendered) return;
 
@@ -134,12 +134,12 @@ function JobExperienceListAsteroids() {
         </Float>
       </group>
 
-      {/* Evelstar */}
+      {/* ruigrok */}
       <group
-        ref={evelstarAsteroidRef}
+        ref={ruigrokAsteroidRef}
         onPointerEnter={handlePointerEnterAsteroid}
         onPointerLeave={handlePointerLeaveAsteroid}
-        onClick={() => handleClickAsteroid(JOB_EXPERIENCE_LIST.evelstar)}
+        onClick={() => handleClickAsteroid(JOB_EXPERIENCE_LIST.ruigrok)}
         scale={0.13}
         position={[-15, 0, -80]}
         rotation={[0.3, 3, 0.1]}
@@ -157,7 +157,7 @@ function JobExperienceListAsteroids() {
               ref={(el) =>
                 materialsToHideRefs.current.push(el as THREE.Material)
               }
-              map={evelstarTexture}
+              map={ruigrokTexture}
               transparent
             />
             <planeGeometry args={[13, 6]} />

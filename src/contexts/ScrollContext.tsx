@@ -47,7 +47,7 @@ export function ScrollContextProvider({
   children: React.ReactNode;
 }) {
   const [previousScrollProgress, setPreviousScrollProgress] = useState(0);
-  const [scrollProgress, setScrollProgress] = useState(9);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const [isScrollingPaused, setIsScrollingPaused] = useState(false);
   const [updater, updateEffect] = useState(false);
   const { canStartCapturingScroll } = useSettingsContext();
@@ -96,7 +96,6 @@ export function ScrollContextProvider({
       });
     }
 
-    console.log(updater);
     // Prevent over firing the handleScroll event via debouncing
     debouncer(() => {
       window.addEventListener("wheel", handleScroll, { once: true });

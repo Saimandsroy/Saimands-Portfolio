@@ -17,48 +17,52 @@ msgstr ""
 msgid " for amateur photography of those places "
 msgstr " for amateur photography of those places "
 
-#: src/lib/constants.tsx:543
+#: src/lib/constants.tsx:542
 msgid "2D Space Portfolio"
 msgstr "2D Space Portfolio"
 
-#: src/lib/constants.tsx:566
+#: src/lib/constants.tsx:565
 msgid "3D screensaver for a sports club using GPGPU computing in R3F ⚡"
 msgstr "3D screensaver for a sports club using GPGPU computing in R3F ⚡"
 
-#: src/lib/constants.tsx:477
+#: src/lib/constants.tsx:476
 msgid "A foreign language learning app for vocabulary reinforcement by typing ⌨️"
 msgstr "A foreign language learning app for vocabulary reinforcement by typing ⌨️"
 
-#: src/lib/constants.tsx:545
+#: src/lib/constants.tsx:544
 msgid "A fully animated Next.js portfolio with the help of ThreeJS, Framer Motion, shadcn/ui and clever usage of .webm videos 🌌"
 msgstr "A fully animated Next.js portfolio with the help of ThreeJS, Framer Motion, shadcn/ui and clever usage of .webm videos 🌌"
 
-#: src/lib/constants.tsx:429
+#: src/lib/constants.tsx:428
 msgid "A react library full of highly customizable and animated buttons out of the box. This project includes an SPA for documentation and an NPM package 👉"
 msgstr "A react library full of highly customizable and animated buttons out of the box. This project includes an SPA for documentation and an NPM package 👉"
 
-#: src/lib/constants.tsx:500
+#: src/lib/constants.tsx:499
 msgid "A website including 3D features made to promote a beautiful organiation in Luxemburg "
 msgstr "A website including 3D features made to promote a beautiful organiation in Luxemburg "
+
+#: src/lib/constants.tsx:167
+msgid "Aalsmeer, Netherlands"
+msgstr "Aalsmeer, Netherlands"
 
 #: src/canvases/space/sections/heroSection/components/HeroAboutMe.tsx:28
 msgid "About me "
 msgstr "About me "
 
 #: src/lib/constants.tsx:144
-#: src/lib/constants.tsx:181
+#: src/lib/constants.tsx:180
 msgid "adaptibility"
 msgstr "adaptibility"
 
-#: src/lib/constants.tsx:259
+#: src/lib/constants.tsx:258
 msgid "Alternative Participation of Rural Youth in Bakuriani, Georgia"
 msgstr "Alternative Participation of Rural Youth in Bakuriani, Georgia"
 
-#: src/lib/constants.tsx:524
+#: src/lib/constants.tsx:523
 msgid "An affiliate marketing application built in Expo for the web, Android and iOS"
 msgstr "An affiliate marketing application built in Expo for the web, Android and iOS"
 
-#: src/lib/constants.tsx:453
+#: src/lib/constants.tsx:452
 msgid "An SPA for managing your finances by taking track of your budgets and expenses. Utilizes the browser's localStorage and advanced UI state using React's Context API with useReducer 💸"
 msgstr "An SPA for managing your finances by taking track of your budgets and expenses. Utilizes the browser's localStorage and advanced UI state using React's Context API with useReducer 💸"
 
@@ -82,7 +86,11 @@ msgstr "attending mentor on-site and onine meetings"
 msgid "Audio settings"
 msgstr "Audio settings"
 
-#: src/lib/constants.tsx:564
+#: src/lib/constants.tsx:175
+msgid "avoiding the whole process from stopping or being delayed"
+msgstr "avoiding the whole process from stopping or being delayed"
+
+#: src/lib/constants.tsx:563
 msgid "Beniaminek 03 Screensaver"
 msgstr "Beniaminek 03 Screensaver"
 
@@ -90,7 +98,7 @@ msgstr "Beniaminek 03 Screensaver"
 msgid "Beyond technology, I enjoy a range of other activites including working out, traveling, photography, swimming and many more! "
 msgstr "Beyond technology, I enjoy a range of other activites including working out, traveling, photography, swimming and many more! "
 
-#: src/lib/constants.tsx:167
+#: src/lib/constants.tsx:168
 msgid "Bike courier"
 msgstr "Bike courier"
 
@@ -140,11 +148,11 @@ msgstr "Click on the asteroids for more details!"
 msgid "Close"
 msgstr "Close"
 
-#: src/lib/constants.tsx:336
+#: src/lib/constants.tsx:335
 msgid "Complete Blender Megacourse: Beginner to Expert"
 msgstr "Complete Blender Megacourse: Beginner to Expert"
 
-#: src/lib/constants.tsx:357
+#: src/lib/constants.tsx:356
 msgid "CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam"
 msgstr "CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam"
 
@@ -165,12 +173,16 @@ msgid "Credits 💖"
 msgstr "Credits 💖"
 
 #: src/lib/constants.tsx:179
-msgid "cycling"
-msgstr "cycling"
+#~ msgid "cycling"
+#~ msgstr "cycling"
+
+#: src/lib/constants.tsx:174
+msgid "delivering crates to specific cold rooms"
+msgstr "delivering crates to specific cold rooms"
 
 #: src/lib/constants.tsx:170
-msgid "Delivering orders via the partnered mobile application — Glovo."
-msgstr "Delivering orders via the partnered mobile application — Glovo."
+#~ msgid "Delivering orders via the partnered mobile application — Glovo."
+#~ msgstr "Delivering orders via the partnered mobile application — Glovo."
 
 #: src/components/AnimateDocumentTitle.tsx:28
 #: src/components/StartupScreen.tsx:154
@@ -189,11 +201,11 @@ msgstr "Deploying....."
 msgid "developing a website"
 msgstr "developing a website"
 
-#: src/lib/constants.tsx:220
+#: src/lib/constants.tsx:219
 msgid "Developing Infrastructure to Work with Youth in Daugirdiškės, Lithuania"
 msgstr "Developing Infrastructure to Work with Youth in Daugirdiškės, Lithuania"
 
-#: src/lib/constants.tsx:239
+#: src/lib/constants.tsx:238
 msgid "Digital Youth Work Methods in Saraiķi, Latvia"
 msgstr "Digital Youth Work Methods in Saraiķi, Latvia"
 
@@ -213,7 +225,7 @@ msgstr "e.g. Order for a website"
 msgid "Enable sounds"
 msgstr "Enable sounds"
 
-#: src/lib/constants.tsx:522
+#: src/lib/constants.tsx:521
 msgid "Enrollo"
 msgstr "Enrollo"
 
@@ -265,7 +277,7 @@ msgstr "helping other employees with various problems"
 msgid "High graphics"
 msgstr "High graphics"
 
-#: src/lib/constants.tsx:451
+#: src/lib/constants.tsx:450
 msgid "Home Budget"
 msgstr "Home Budget"
 
@@ -323,7 +335,7 @@ msgstr "Learn more"
 #~ msgid "Learn to DJ With Just Your Laptop: No DJ Equipment Needed"
 #~ msgstr "Learn to DJ With Just Your Laptop: No DJ Equipment Needed"
 
-#: src/lib/constants.tsx:475
+#: src/lib/constants.tsx:474
 msgid "LingoType"
 msgstr "LingoType"
 
@@ -331,7 +343,7 @@ msgstr "LingoType"
 msgid "Low graphics"
 msgstr "Low graphics"
 
-#: src/lib/constants.tsx:396
+#: src/lib/constants.tsx:395
 msgid "Marketing Psychology and Consumer Behavior"
 msgstr "Marketing Psychology and Consumer Behavior"
 
@@ -364,8 +376,8 @@ msgid "My primary focus lies in full-stack and creative web development, however
 msgstr "My primary focus lies in full-stack and creative web development, however, I also learned the fundamentals in other digital areas such as 3D computer graphics, graphic design, photo or video editing. "
 
 #: src/lib/constants.tsx:174
-msgid "obeying traffic laws"
-msgstr "obeying traffic laws"
+#~ msgid "obeying traffic laws"
+#~ msgstr "obeying traffic laws"
 
 #: src/lib/constants.tsx:490
 #~ msgid "Old Space Portfolio"
@@ -382,6 +394,10 @@ msgstr "OR"
 #: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:70
 msgid "other countries too!"
 msgstr "other countries too!"
+
+#: src/lib/constants.tsx:170
+msgid "Packaging flowers in the Dutch factories"
+msgstr "Packaging flowers in the Dutch factories"
 
 #: src/components/CreditsDialogButton.tsx:41
 msgid "Planet textures by"
@@ -403,7 +419,7 @@ msgstr "Projects"
 msgid "promoting our home town and organizing events"
 msgstr "promoting our home town and organizing events"
 
-#: src/lib/constants.tsx:427
+#: src/lib/constants.tsx:426
 msgid "React ClickMe"
 msgstr "React ClickMe"
 
@@ -466,7 +482,6 @@ msgstr "Source code 💻"
 #~ msgstr "Speak Any Language in 10 Days - Conversational lvl [2024]"
 
 #: src/lib/constants.tsx:81
-#: src/lib/constants.tsx:166
 msgid "Starogard Gdański, Pomerania, Poland"
 msgstr "Starogard Gdański, Pomerania, Poland"
 
@@ -498,11 +513,11 @@ msgstr "taking pictures and videos for the national agency"
 msgid "technical support"
 msgstr "technical support"
 
-#: src/lib/constants.tsx:317
+#: src/lib/constants.tsx:316
 msgid "The Complete JavaScript Course 2023: From Zero to Expert!"
 msgstr "The Complete JavaScript Course 2023: From Zero to Expert!"
 
-#: src/lib/constants.tsx:298
+#: src/lib/constants.tsx:297
 msgid "The Ultimate React Course 2024: React, Next.js, Redux & More"
 msgstr "The Ultimate React Course 2024: React, Next.js, Redux & More"
 
@@ -518,7 +533,7 @@ msgstr "The Ultimate React Course 2024: React, Next.js, Redux & More"
 msgid "This action cannot be undone. This will permanently delete all of your local storage data and totally refresh the experience."
 msgstr "This action cannot be undone. This will permanently delete all of your local storage data and totally refresh the experience."
 
-#: src/lib/constants.tsx:278
+#: src/lib/constants.tsx:277
 msgid "Three.js Journey — Learn WebGL with Three.js"
 msgstr "Three.js Journey — Learn WebGL with Three.js"
 
@@ -527,11 +542,10 @@ msgstr "Three.js Journey — Learn WebGL with Three.js"
 #~ msgstr "Three.js, React Three Fiber, Drei, React Spring & More"
 
 #: src/lib/constants.tsx:143
-#: src/lib/constants.tsx:180
 msgid "time management"
 msgstr "time management"
 
-#: src/lib/constants.tsx:376
+#: src/lib/constants.tsx:375
 msgid "UX Writing: Microcopy, User Research, Accessibility & More"
 msgstr "UX Writing: Microcopy, User Research, Accessibility & More"
 
@@ -559,10 +573,10 @@ msgstr "Volume"
 msgid "writing and creating social media posts"
 msgstr "writing and creating social media posts"
 
-#: src/lib/constants.tsx:200
+#: src/lib/constants.tsx:199
 msgid "Youth Entrepreneurship in Palanga, Lithuania"
 msgstr "Youth Entrepreneurship in Palanga, Lithuania"
 
-#: src/lib/constants.tsx:497
+#: src/lib/constants.tsx:496
 msgid "Youth Work Synergy"
 msgstr "Youth Work Synergy"

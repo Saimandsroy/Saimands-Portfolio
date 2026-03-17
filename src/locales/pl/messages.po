@@ -15,15 +15,15 @@ msgstr ""
 msgid " for amateur photography of those places "
 msgstr " dla amatorskiej fotografii tych miejsc "
 
-#: src/lib/constants.tsx:543
+#: src/lib/constants.tsx:542
 msgid "2D Space Portfolio"
 msgstr "2D Kosmiczne Portfolio"
 
-#: src/lib/constants.tsx:566
+#: src/lib/constants.tsx:565
 msgid "3D screensaver for a sports club using GPGPU computing in R3F ⚡"
 msgstr "3D wygaszacz ekranu dla klubu sportowego używając kalkulacji GPGPU w R3F ⚡"
 
-#: src/lib/constants.tsx:477
+#: src/lib/constants.tsx:476
 msgid "A foreign language learning app for vocabulary reinforcement by typing ⌨️"
 msgstr "Aplikacja do nauki słownictwa języków obcych poprzez pisanie na klawiaturze ⌨️"
 
@@ -31,11 +31,11 @@ msgstr "Aplikacja do nauki słownictwa języków obcych poprzez pisanie na klawi
 #~ msgid "A fully animated Next.js portfolio with the help of Three.js, Framer Motion, shadcn/ui and clever usage of .webm videos 🌌"
 #~ msgstr "W pełni animowane Next.js portfolio wykonane za pomocą Three.js, Motion, shadcn/ui oraz sprytnych użyć filmów .webm 🌌"
 
-#: src/lib/constants.tsx:545
+#: src/lib/constants.tsx:544
 msgid "A fully animated Next.js portfolio with the help of ThreeJS, Framer Motion, shadcn/ui and clever usage of .webm videos 🌌"
 msgstr "W pełni animowane Next.js portfolio wykonane za pomocą Three.js, Motion, shadcn/ui oraz sprytnych użyć filmów .webm 🌌"
 
-#: src/lib/constants.tsx:429
+#: src/lib/constants.tsx:428
 msgid "A react library full of highly customizable and animated buttons out of the box. This project includes an SPA for documentation and an NPM package 👉"
 msgstr "Biblioteka do React pełna wysoko personalizowalnych i animowanych przycisków przygotowanych od razu dla developera. Ten projekt zawiera SPA dla dokumentacji oraz paczkę NPM 👉"
 
@@ -43,24 +43,28 @@ msgstr "Biblioteka do React pełna wysoko personalizowalnych i animowanych przyc
 #~ msgid "A React library full of highly customizable and animated buttons out of the box. This project includes an SPA for documentation and an NPM package 👉"
 #~ msgstr "Biblioteka do React pełna wysoko personalizowalnych i animowanych przycisków przygotowanych od razu dla developera. Ten projekt zawiera SPA dla dokumentacji oraz paczkę NPM 👉"
 
-#: src/lib/constants.tsx:500
+#: src/lib/constants.tsx:499
 msgid "A website including 3D features made to promote a beautiful organiation in Luxemburg "
 msgstr "Strona internetowa zawierająca 3D aspekty zrobiona dla promowania pięknej organizacji zlokalizowanej w Luksemburgu "
+
+#: src/lib/constants.tsx:167
+msgid "Aalsmeer, Netherlands"
+msgstr "Aalsmeer, Netherlands"
 
 #: src/canvases/space/sections/heroSection/components/HeroAboutMe.tsx:28
 msgid "About me "
 msgstr "O mnie "
 
 #: src/lib/constants.tsx:144
-#: src/lib/constants.tsx:181
+#: src/lib/constants.tsx:180
 msgid "adaptibility"
 msgstr "zdolność adaptacji"
 
-#: src/lib/constants.tsx:259
+#: src/lib/constants.tsx:258
 msgid "Alternative Participation of Rural Youth in Bakuriani, Georgia"
 msgstr "Alternatywny Udział Wiejskiej Młodzieży w Bakuriani, Gruzja"
 
-#: src/lib/constants.tsx:524
+#: src/lib/constants.tsx:523
 msgid "An affiliate marketing application built in Expo for the web, Android and iOS"
 msgstr "Aplikacja do marketingu afiliacyjnego zbudowana w Expo dla przeglądarek, Androida oraz iOS'a"
 
@@ -68,7 +72,7 @@ msgstr "Aplikacja do marketingu afiliacyjnego zbudowana w Expo dla przeglądarek
 #~ msgid "An SPA for managing your finances by taking track of your budgets and expenses. Utilizes the browser's local storage and advanced UI state using React's Context API with useReducer 💸"
 #~ msgstr "SPA dla zarządzania swoimi finansami poprzez notowanie budżetów oraz wydatków. Wykorzystuje lokalne dane przeglądarkowe oraz zaawansowany system dla UI state za pomocą React Context API oraz useReducer 💸"
 
-#: src/lib/constants.tsx:453
+#: src/lib/constants.tsx:452
 msgid "An SPA for managing your finances by taking track of your budgets and expenses. Utilizes the browser's localStorage and advanced UI state using React's Context API with useReducer 💸"
 msgstr "SPA dla zarządzania swoimi finansami poprzez notowanie budżetów oraz wydatków. Wykorzystuje lokalne dane przeglądarkowe oraz zaawansowany system dla UI state za pomocą React Context API oraz useReducer 💸"
 
@@ -92,7 +96,11 @@ msgstr "uczestnictwo w spotkaniach z mentorem, na miejscu jak i online"
 msgid "Audio settings"
 msgstr "Ustawienia dźwięku"
 
-#: src/lib/constants.tsx:564
+#: src/lib/constants.tsx:175
+msgid "avoiding the whole process from stopping or being delayed"
+msgstr "powtrzymanie procesu od zwolnienia lub zatrzymania"
+
+#: src/lib/constants.tsx:563
 msgid "Beniaminek 03 Screensaver"
 msgstr "Beniaminek 03 Wygaszacz Ekranu"
 
@@ -100,7 +108,7 @@ msgstr "Beniaminek 03 Wygaszacz Ekranu"
 msgid "Beyond technology, I enjoy a range of other activites including working out, traveling, photography, swimming and many more! "
 msgstr "Poza technologią lubię wiele innych aktywności, takich jak ćwiczenia, podróżowanie, fotografia, pływanie i wiele więcej! "
 
-#: src/lib/constants.tsx:167
+#: src/lib/constants.tsx:168
 msgid "Bike courier"
 msgstr "Kurier rowerowy"
 
@@ -150,11 +158,11 @@ msgstr "Kliknij asteroidy, aby zobaczyć więcej szczegółów!"
 msgid "Close"
 msgstr "Zamknij"
 
-#: src/lib/constants.tsx:336
+#: src/lib/constants.tsx:335
 msgid "Complete Blender Megacourse: Beginner to Expert"
 msgstr "Complete Blender Megacourse: Beginner to Expert"
 
-#: src/lib/constants.tsx:357
+#: src/lib/constants.tsx:356
 msgid "CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam"
 msgstr "CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam"
 
@@ -175,12 +183,16 @@ msgid "Credits 💖"
 msgstr "Podziękowania 💖"
 
 #: src/lib/constants.tsx:179
-msgid "cycling"
-msgstr "jazda na rowerze"
+#~ msgid "cycling"
+#~ msgstr "jazda na rowerze"
+
+#: src/lib/constants.tsx:174
+msgid "delivering crates to specific cold rooms"
+msgstr "dostarczanie palet do specyficznych chłodni"
 
 #: src/lib/constants.tsx:170
-msgid "Delivering orders via the partnered mobile application — Glovo."
-msgstr "Dostarczanie zamówień przez partnerską aplikację mobilną — Glovo."
+#~ msgid "Delivering orders via the partnered mobile application — Glovo."
+#~ msgstr "Dostarczanie zamówień przez partnerską aplikację mobilną — Glovo."
 
 #: src/components/AnimateDocumentTitle.tsx:28
 #: src/components/StartupScreen.tsx:154
@@ -199,11 +211,11 @@ msgstr "Przygotowywanie..."
 msgid "developing a website"
 msgstr "tworzenie strony internetowej"
 
-#: src/lib/constants.tsx:220
+#: src/lib/constants.tsx:219
 msgid "Developing Infrastructure to Work with Youth in Daugirdiškės, Lithuania"
 msgstr "Wykorzystywanie Infrastruktury do Działań z Młodzieżą w Daugirdiškės, Lithuania"
 
-#: src/lib/constants.tsx:239
+#: src/lib/constants.tsx:238
 msgid "Digital Youth Work Methods in Saraiķi, Latvia"
 msgstr "Metody Cyfrowej Pracy Młodzieży w Saraiķi, Latvia"
 
@@ -223,7 +235,7 @@ msgstr "np. Zamówienie witryny internetowej"
 msgid "Enable sounds"
 msgstr "Włącz dźwięk"
 
-#: src/lib/constants.tsx:522
+#: src/lib/constants.tsx:521
 msgid "Enrollo"
 msgstr "Enrollo"
 
@@ -275,7 +287,7 @@ msgstr "pomoc innym pracownikom w rozwiązywaniu różnych problemów"
 msgid "High graphics"
 msgstr "Wysoka grafika"
 
-#: src/lib/constants.tsx:451
+#: src/lib/constants.tsx:450
 msgid "Home Budget"
 msgstr "Home Budget"
 
@@ -333,7 +345,7 @@ msgstr "Dowiedz się więcej"
 #~ msgid "Learn to DJ With Just Your Laptop: No DJ Equipment Needed"
 #~ msgstr "Learn to DJ With Just Your Laptop: No DJ Equipment Needed"
 
-#: src/lib/constants.tsx:475
+#: src/lib/constants.tsx:474
 msgid "LingoType"
 msgstr "LingoType"
 
@@ -341,7 +353,7 @@ msgstr "LingoType"
 msgid "Low graphics"
 msgstr "Niska grafika"
 
-#: src/lib/constants.tsx:396
+#: src/lib/constants.tsx:395
 msgid "Marketing Psychology and Consumer Behavior"
 msgstr "Marketing Psychology and Consumer Behavior"
 
@@ -374,8 +386,8 @@ msgid "My primary focus lies in full-stack and creative web development, however
 msgstr "Moim głównym zainteresowaniem jest full-stack i kreatywne tworzenie stron internetowych, jednak poznałem również podstawy w innych dziedzinach cyfrowych, takich jak grafika 3D, projektowanie graficzne, edycja zdjęć i filmów. "
 
 #: src/lib/constants.tsx:174
-msgid "obeying traffic laws"
-msgstr "przestrzeganie przepisów drogowych"
+#~ msgid "obeying traffic laws"
+#~ msgstr "przestrzeganie przepisów drogowych"
 
 #: src/lib/constants.tsx:490
 #~ msgid "Old Space Portfolio"
@@ -392,6 +404,10 @@ msgstr "LUB"
 #: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:70
 msgid "other countries too!"
 msgstr "wielu innych krajach!"
+
+#: src/lib/constants.tsx:170
+msgid "Packaging flowers in the Dutch factories"
+msgstr "Pakowanie kwiatów w niderlandzkich fabrykach i magazynach"
 
 #: src/components/CreditsDialogButton.tsx:41
 msgid "Planet textures by"
@@ -413,7 +429,7 @@ msgstr "Projekty"
 msgid "promoting our home town and organizing events"
 msgstr "promowanie naszego miasta rodzinnego i organizacja wydarzeń"
 
-#: src/lib/constants.tsx:427
+#: src/lib/constants.tsx:426
 msgid "React ClickMe"
 msgstr "React ClickMe"
 
@@ -476,7 +492,6 @@ msgstr "Kod źródłowy 💻"
 #~ msgstr "Speak Any Language in 10 Days - Conversational lvl [2024]"
 
 #: src/lib/constants.tsx:81
-#: src/lib/constants.tsx:166
 msgid "Starogard Gdański, Pomerania, Poland"
 msgstr "Starogard Gdański, Pomorskie, Polska"
 
@@ -508,11 +523,11 @@ msgstr "robienie zdjęć i nagrań dla agencji narodowej"
 msgid "technical support"
 msgstr "wsparcie techniczne"
 
-#: src/lib/constants.tsx:317
+#: src/lib/constants.tsx:316
 msgid "The Complete JavaScript Course 2023: From Zero to Expert!"
 msgstr "The Complete JavaScript Course 2023: From Zero to Expert!"
 
-#: src/lib/constants.tsx:298
+#: src/lib/constants.tsx:297
 msgid "The Ultimate React Course 2024: React, Next.js, Redux & More"
 msgstr "The Ultimate React Course 2024: React, Next.js, Redux & More"
 
@@ -528,7 +543,7 @@ msgstr "The Ultimate React Course 2024: React, Next.js, Redux & More"
 msgid "This action cannot be undone. This will permanently delete all of your local storage data and totally refresh the experience."
 msgstr "Ta akcja nie może zostać odwrócona. To permanentnie usunie wszystkie twoje dane przeglądarkowe oraz totalnie odświeży doświadczenie."
 
-#: src/lib/constants.tsx:278
+#: src/lib/constants.tsx:277
 msgid "Three.js Journey — Learn WebGL with Three.js"
 msgstr "Three.js Journey — Learn WebGL with Three.js"
 
@@ -537,11 +552,10 @@ msgstr "Three.js Journey — Learn WebGL with Three.js"
 #~ msgstr "Three.js, React Three Fiber, Drei, React Spring & More"
 
 #: src/lib/constants.tsx:143
-#: src/lib/constants.tsx:180
 msgid "time management"
 msgstr "zarządzanie czasem"
 
-#: src/lib/constants.tsx:376
+#: src/lib/constants.tsx:375
 msgid "UX Writing: Microcopy, User Research, Accessibility & More"
 msgstr "UX Writing: Microcopy, User Research, Accessibility & More"
 
@@ -569,10 +583,10 @@ msgstr "Głośność"
 msgid "writing and creating social media posts"
 msgstr "pisanie i tworzenie postów w mediach społecznościowych"
 
-#: src/lib/constants.tsx:200
+#: src/lib/constants.tsx:199
 msgid "Youth Entrepreneurship in Palanga, Lithuania"
 msgstr "Przedsiębiorczość Młodzieży w Palanga, Litwa"
 
-#: src/lib/constants.tsx:497
+#: src/lib/constants.tsx:496
 msgid "Youth Work Synergy"
 msgstr "Youth Work Synergy"
