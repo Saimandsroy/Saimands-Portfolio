@@ -165,7 +165,7 @@ export const JOB_EXPERIENCE_LIST = {
         year: "2-digit",
       }),
     Location: () => t`Aalsmeer, Netherlands`,
-    Occupation: () => t`Bike courier`,
+    Occupation: () => t`Blue-collar worker`,
     company: "Ruigrok",
     Description: () => t`Packaging flowers in the Dutch factories`,
     Responsibilities: () => (

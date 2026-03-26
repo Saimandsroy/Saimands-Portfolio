@@ -58,7 +58,7 @@ function StartupScreen() {
       gsap.fromTo(
         loadingTextContainerRef.current,
         { opacity: 0 },
-        { opacity: 1 }
+        { opacity: 1 },
       );
     }
 
@@ -134,7 +134,7 @@ function StartupScreen() {
   // Set hasLoadedBackgroundImage on image load
   useEffect(() => {
     backgroundImageRef.current.addEventListener("load", () =>
-      setHasLoadedBackgroundImage(true)
+      setHasLoadedBackgroundImage(true),
     );
   }, []);
 
@@ -148,7 +148,7 @@ function StartupScreen() {
         <h1
           className={cn(
             "text-2xl transition-opacity duration-500 ease-in-out select-none pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50",
-            hasLoadedBackgroundImage ? "opacity-0!" : "opacity-100!"
+            hasLoadedBackgroundImage ? "opacity-0!" : "opacity-100!",
           )}
         >
           {t`Deploying...`}
@@ -189,7 +189,7 @@ function StartupScreen() {
       <img
         ref={backgroundImageRef}
         className={cn(
-          "w-[93.75rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 brightness-0"
+          "w-[93.75rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 brightness-0",
         )}
         src="/assets/pictures/startup_screen_background.jpg"
         alt="The control panel of your spaceship which will take you to a tour of Mateusz Muszarski's portfolio"
@@ -211,7 +211,7 @@ function StartupScreen() {
             className="h-screen w-[50vw] absolute object-cover [box-shadow:0_0_1rem_rgba(0,0,0,0.75)] right-0 translate-x-full top-0 z-50"
           />
         </>,
-        document.body
+        document.body,
       )}
     </div>
   );

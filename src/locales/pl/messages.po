@@ -109,8 +109,12 @@ msgid "Beyond technology, I enjoy a range of other activites including working o
 msgstr "Poza technologią lubię wiele innych aktywności, takich jak ćwiczenia, podróżowanie, fotografia, pływanie i wiele więcej! "
 
 #: src/lib/constants.tsx:168
-msgid "Bike courier"
-msgstr "Kurier rowerowy"
+#~ msgid "Bike courier"
+#~ msgstr "Kurier rowerowy"
+
+#: src/lib/constants.tsx:168
+msgid "Blue-collar worker"
+msgstr "Pracownik fizyczny"
 
 #: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:56
 msgid "But I've been to a bunch of"
