@@ -13,102 +13,77 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:118
-msgid " for amateur photography of those places "
-msgstr " for amateur photography of those places "
+#: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:78
+msgid " to see what I'm shipping 👨‍💻"
+msgstr " to see what I'm shipping 👨‍💻"
 
-#: src/lib/constants.tsx:542
-msgid "2D Space Portfolio"
-msgstr "2D Space Portfolio"
+#: src/lib/constants.tsx:456
+msgid "A modern interior home design platform built in Next.js, helping users explore curated design inspirations, connect with designers, and visualize their dream spaces."
+msgstr "A modern interior home design platform built in Next.js, helping users explore curated design inspirations, connect with designers, and visualize their dream spaces."
 
-#: src/lib/constants.tsx:565
-msgid "3D screensaver for a sports club using GPGPU computing in R3F ⚡"
-msgstr "3D screensaver for a sports club using GPGPU computing in R3F ⚡"
+#: src/lib/constants.tsx:360
+msgid "A production-grade SEO workflow platform serving 60K+ active bloggers with automated link-building pipelines, multi-tier approvals, and a secure digital wallet for contractor payouts."
+msgstr "A production-grade SEO workflow platform serving 60K+ active bloggers with automated link-building pipelines, multi-tier approvals, and a secure digital wallet for contractor payouts."
 
-#: src/lib/constants.tsx:476
-msgid "A foreign language learning app for vocabulary reinforcement by typing ⌨️"
-msgstr "A foreign language learning app for vocabulary reinforcement by typing ⌨️"
-
-#: src/lib/constants.tsx:544
-msgid "A fully animated Next.js portfolio with the help of ThreeJS, Framer Motion, shadcn/ui and clever usage of .webm videos 🌌"
-msgstr "A fully animated Next.js portfolio with the help of ThreeJS, Framer Motion, shadcn/ui and clever usage of .webm videos 🌌"
-
-#: src/lib/constants.tsx:428
-msgid "A react library full of highly customizable and animated buttons out of the box. This project includes an SPA for documentation and an NPM package 👉"
-msgstr "A react library full of highly customizable and animated buttons out of the box. This project includes an SPA for documentation and an NPM package 👉"
-
-#: src/lib/constants.tsx:499
-msgid "A website including 3D features made to promote a beautiful organiation in Luxemburg "
-msgstr "A website including 3D features made to promote a beautiful organiation in Luxemburg "
-
-#: src/lib/constants.tsx:167
-msgid "Aalsmeer, Netherlands"
-msgstr "Aalsmeer, Netherlands"
+#: src/lib/constants.tsx:384
+msgid "A production-ready full-stack e-commerce platform for clothing brands with product catalogs, shopping carts, order workflows, admin portal — Dockerized and live on Google Cloud VPS."
+msgstr "A production-ready full-stack e-commerce platform for clothing brands with product catalogs, shopping carts, order workflows, admin portal — Dockerized and live on Google Cloud VPS."
 
 #: src/canvases/space/sections/heroSection/components/HeroAboutMe.tsx:28
 msgid "About me "
 msgstr "About me "
 
-#: src/lib/constants.tsx:144
-#: src/lib/constants.tsx:180
-msgid "adaptibility"
-msgstr "adaptibility"
+#: src/lib/constants.tsx:192
+msgid "AI Integration"
+msgstr "AI Integration"
 
-#: src/lib/constants.tsx:258
-msgid "Alternative Participation of Rural Youth in Bakuriani, Georgia"
-msgstr "Alternative Participation of Rural Youth in Bakuriani, Georgia"
+#: src/lib/constants.tsx:432
+msgid "An AI-powered chatbot platform with seamless user subscriptions — built React frontend, integrated full PhonePe payment gateway, and connected AI bot response workflows via REST APIs."
+msgstr "An AI-powered chatbot platform with seamless user subscriptions — built React frontend, integrated full PhonePe payment gateway, and connected AI bot response workflows via REST APIs."
 
-#: src/lib/constants.tsx:523
-msgid "An affiliate marketing application built in Expo for the web, Android and iOS"
-msgstr "An affiliate marketing application built in Expo for the web, Android and iOS"
+#: src/lib/constants.tsx:408
+msgid "An AI-powered outbound automation platform managing email & WhatsApp campaigns at scale — CSV lead uploads, Google Gemini AI copy generation, inbox warmup, and multi-sender management."
+msgstr "An AI-powered outbound automation platform managing email & WhatsApp campaigns at scale — CSV lead uploads, Google Gemini AI copy generation, inbox warmup, and multi-sender management."
 
-#: src/lib/constants.tsx:452
-msgid "An SPA for managing your finances by taking track of your budgets and expenses. Utilizes the browser's localStorage and advanced UI state using React's Context API with useReducer 💸"
-msgstr "An SPA for managing your finances by taking track of your budgets and expenses. Utilizes the browser's localStorage and advanced UI state using React's Context API with useReducer 💸"
+#: src/lib/constants.tsx:133
+msgid "Architected and shipped full-stack features across multiple client projects"
+msgstr "Architected and shipped full-stack features across multiple client projects"
 
-#: src/lib/constants.tsx:132
-msgid "analyzing nearby threats to the animals and getting rid of them"
-msgstr "analyzing nearby threats to the animals and getting rid of them"
+#: src/lib/constants.tsx:89
+msgid "Architected scalable applications with Next.js, Node.js, and DynamoDB"
+msgstr "Architected scalable applications with Next.js, Node.js, and DynamoDB"
 
 #: src/components/CreditsDialogButton.tsx:49
 msgid "are licensed under"
 msgstr "are licensed under"
 
-#: src/lib/constants.tsx:92
-msgid "attending meetings with volunteers"
-msgstr "attending meetings with volunteers"
-
-#: src/lib/constants.tsx:135
-msgid "attending mentor on-site and onine meetings"
-msgstr "attending mentor on-site and onine meetings"
-
 #: src/components/AudioSettingButton.tsx:60
 msgid "Audio settings"
 msgstr "Audio settings"
 
-#: src/lib/constants.tsx:175
-msgid "avoiding the whole process from stopping or being delayed"
-msgstr "avoiding the whole process from stopping or being delayed"
-
-#: src/lib/constants.tsx:563
-msgid "Beniaminek 03 Screensaver"
-msgstr "Beniaminek 03 Screensaver"
+#: src/lib/constants.tsx:81
+msgid "Bengaluru, India"
+msgstr "Bengaluru, India"
 
 #: src/canvases/space/sections/heroSection/components/HeroAboutMe.tsx:48
-msgid "Beyond technology, I enjoy a range of other activites including working out, traveling, photography, swimming and many more! "
-msgstr "Beyond technology, I enjoy a range of other activites including working out, traveling, photography, swimming and many more! "
+msgid "Beyond the screen, I believe in learning by doing turning curiosity into production-grade projects and real experiments. I'm open to internships, collaborations, and connecting with fellow builders, mentors, or recruiters. If you're working on something exciting, let's talk!"
+msgstr "Beyond the screen, I believe in learning by doing turning curiosity into production-grade projects and real experiments. I'm open to internships, collaborations, and connecting with fellow builders, mentors, or recruiters. If you're working on something exciting, let's talk!"
 
-#: src/lib/constants.tsx:168
-#~ msgid "Bike courier"
-#~ msgstr "Bike courier"
+#: src/lib/constants.tsx:129
+msgid "Building and scaling full-stack digital products for a creative tech studio."
+msgstr "Building and scaling full-stack digital products for a creative tech studio."
 
-#: src/lib/constants.tsx:168
-msgid "Blue-collar worker"
-msgstr "Blue-collar worker"
+#: src/lib/constants.tsx:180
+msgid "Built and shipped core frontend components with React for the chatbot interface"
+msgstr "Built and shipped core frontend components with React for the chatbot interface"
 
-#: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:56
-msgid "But I've been to a bunch of"
-msgstr "But I've been to a bunch of"
+#: src/lib/constants.tsx:92
+msgid "Built learner and educator dashboards with live classes, video uploads, and test modules"
+msgstr "Built learner and educator dashboards with live classes, video uploads, and test modules"
+
+#: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:49
+msgid "But my code is already running across the globe 🌍"
+msgstr "But my code is already running across the globe 🌍"
 
 #: src/components/CreditsDialogButton.tsx:136
 #: src/components/CreditsDialogButton.tsx:155
@@ -124,25 +99,17 @@ msgstr "Cancel"
 msgid "Certificates"
 msgstr "Certificates"
 
-#: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:99
+#: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:59
 msgid "Check out my "
 msgstr "Check out my "
-
-#: src/components/MobileWarning.tsx:63
-msgid "check out my older portfolio 🚀"
-msgstr "check out my older portfolio 🚀"
 
 #: src/components/CreditsDialogButton.tsx:196
 msgid "Cheers to them!"
 msgstr "Cheers to them!"
 
-#: src/lib/constants.tsx:133
-msgid "cleaning up local beaches from garbage"
-msgstr "cleaning up local beaches from garbage"
-
-#: src/components/MobileWarning.tsx:71
-msgid "click here."
-msgstr "click here."
+#: src/lib/constants.tsx:430
+msgid "ChhotuBot.com"
+msgstr "ChhotuBot.com"
 
 #: src/canvases/space/sections/jobExperienceSection/components/JobExperienceListInfoText.tsx:43
 msgid "Click on the asteroids for more details!"
@@ -152,41 +119,29 @@ msgstr "Click on the asteroids for more details!"
 msgid "Close"
 msgstr "Close"
 
-#: src/lib/constants.tsx:335
-msgid "Complete Blender Megacourse: Beginner to Expert"
-msgstr "Complete Blender Megacourse: Beginner to Expert"
+#: src/lib/constants.tsx:183
+msgid "Collaborated on API integrations connecting frontend with AI bot response workflows"
+msgstr "Collaborated on API integrations connecting frontend with AI bot response workflows"
 
-#: src/lib/constants.tsx:356
-msgid "CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam"
-msgstr "CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam"
+#: src/lib/constants.tsx:139
+msgid "Collaborated remotely with cross-functional teams on product delivery and deadlines"
+msgstr "Collaborated remotely with cross-functional teams on product delivery and deadlines"
 
 #: src/canvases/space/sections/contactSection/components/ContactForm.tsx:116
 msgid "Contact"
 msgstr "Contact"
 
+#: src/lib/constants.tsx:173
+msgid "Contributed to ChhotuBot.com — an AI-powered chatbot platform serving real users."
+msgstr "Contributed to ChhotuBot.com — an AI-powered chatbot platform serving real users."
+
 #: src/components/ui/combobox.tsx:58
 msgid "Couldn't find results"
 msgstr "Couldn't find results"
 
-#: src/lib/constants.tsx:90
-msgid "creating spreadsheets"
-msgstr "creating spreadsheets"
-
 #: src/components/CreditsDialogButton.tsx:35
 msgid "Credits 💖"
 msgstr "Credits 💖"
-
-#: src/lib/constants.tsx:179
-#~ msgid "cycling"
-#~ msgstr "cycling"
-
-#: src/lib/constants.tsx:174
-msgid "delivering crates to specific cold rooms"
-msgstr "delivering crates to specific cold rooms"
-
-#: src/lib/constants.tsx:170
-#~ msgid "Delivering orders via the partnered mobile application — Glovo."
-#~ msgstr "Delivering orders via the partnered mobile application — Glovo."
 
 #: src/components/AnimateDocumentTitle.tsx:28
 #: src/components/StartupScreen.tsx:154
@@ -201,25 +156,17 @@ msgstr "Deploying...."
 msgid "Deploying....."
 msgstr "Deploying....."
 
-#: src/lib/constants.tsx:88
-msgid "developing a website"
-msgstr "developing a website"
-
-#: src/lib/constants.tsx:219
-msgid "Developing Infrastructure to Work with Youth in Daugirdiškės, Lithuania"
-msgstr "Developing Infrastructure to Work with Youth in Daugirdiškės, Lithuania"
-
-#: src/lib/constants.tsx:238
-msgid "Digital Youth Work Methods in Saraiķi, Latvia"
-msgstr "Digital Youth Work Methods in Saraiķi, Latvia"
-
 #: src/components/ResetSettingsDialogButton.tsx:42
 msgid "Do you want to reset all settings?"
 msgstr "Do you want to reset all settings?"
 
-#: src/canvases/space/sections/jobExperienceSection/components/JobExperienceDownloadResume.tsx:64
+#: src/canvases/space/sections/jobExperienceSection/components/JobExperienceDownloadResume.tsx:62
 msgid "Download résumé"
 msgstr "Download résumé"
+
+#: src/lib/constants.tsx:102
+msgid "DynamoDB / Redis / Kafka"
+msgstr "DynamoDB / Redis / Kafka"
 
 #: src/canvases/space/sections/contactSection/components/ContactForm.tsx:141
 msgid "e.g. Order for a website"
@@ -229,26 +176,9 @@ msgstr "e.g. Order for a website"
 msgid "Enable sounds"
 msgstr "Enable sounds"
 
-#: src/lib/constants.tsx:521
-msgid "Enrollo"
-msgstr "Enrollo"
-
-#: src/lib/constants.tsx:124
-msgid "European Solidarity Corps group volunteer"
-msgstr "European Solidarity Corps group volunteer"
-
-#: src/lib/constants.tsx:99
-msgid "flexibility"
-msgstr "flexibility"
-
-#: src/components/MobileWarning.tsx:59
-msgid "For a more responsive and lighter website, "
-msgstr "For a more responsive and lighter website, "
-
-#: src/lib/constants.tsx:101
-#: src/lib/constants.tsx:142
-msgid "foreign languages"
-msgstr "foreign languages"
+#: src/lib/constants.tsx:230
+msgid "Equilibrio Techfest — Tech Lead"
+msgstr "Equilibrio Techfest — Tech Lead"
 
 #: src/components/CreditsDialogButton.tsx:68
 #: src/components/CreditsDialogButton.tsx:87
@@ -257,9 +187,21 @@ msgstr "foreign languages"
 msgid "from"
 msgstr "from"
 
-#: src/lib/constants.tsx:97
-msgid "front-end development"
-msgstr "front-end development"
+#: src/lib/constants.tsx:170
+msgid "Full Stack Intern"
+msgstr "Full Stack Intern"
+
+#: src/lib/constants.tsx:211
+msgid "GDSC Gen AI Study Jams"
+msgstr "GDSC Gen AI Study Jams"
+
+#: src/lib/constants.tsx:327
+msgid "Generative AI Fundamentals"
+msgstr "Generative AI Fundamentals"
+
+#: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:75
+msgid "GitHub"
+msgstr "GitHub"
 
 #: src/components/StartupScreen.tsx:168
 msgid "Graphics"
@@ -269,37 +211,29 @@ msgstr "Graphics"
 msgid "Graphics settings"
 msgstr "Graphics settings"
 
-#: src/lib/constants.tsx:100
-msgid "helpfulness"
-msgstr "helpfulness"
-
-#: src/lib/constants.tsx:89
-msgid "helping other employees with various problems"
-msgstr "helping other employees with various problems"
-
 #: src/contexts/SettingsContext.tsx:67
 msgid "High graphics"
 msgstr "High graphics"
-
-#: src/lib/constants.tsx:450
-msgid "Home Budget"
-msgstr "Home Budget"
 
 #: src/canvases/space/sections/contactSection/components/ContactForm.tsx:175
 msgid "I am writing to you because..."
 msgstr "I am writing to you because..."
 
-#: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:45
-msgid "I originate from Poland"
-msgstr "I originate from Poland"
+#: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:38
+msgid "I originate from India"
+msgstr "I originate from India"
 
-#: src/components/MobileWarning.tsx:66
-msgid "If you wish to ignore this warning and proceed anyway, "
-msgstr "If you wish to ignore this warning and proceed anyway, "
+#: src/lib/constants.tsx:268
+msgid "IEEE Winner — India Global Representative"
+msgstr "IEEE Winner — India Global Representative"
 
-#: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:115
-msgid "Instagram"
-msgstr "Instagram"
+#: src/lib/constants.tsx:177
+msgid "Integrated a full payment gateway flow for ChhotuBot.com enabling seamless user subscriptions"
+msgstr "Integrated a full payment gateway flow for ChhotuBot.com enabling seamless user subscriptions"
+
+#: src/lib/constants.tsx:95
+msgid "Integrated Kafka and Redis for real-time communication and caching"
+msgstr "Integrated Kafka and Redis for real-time communication and caching"
 
 #: src/components/CreditsDialogButton.tsx:144
 #: src/components/CreditsDialogButton.tsx:163
@@ -307,21 +241,13 @@ msgstr "Instagram"
 msgid "is licensed under"
 msgstr "is licensed under"
 
-#: src/components/MobileWarning.tsx:47
-msgid "It appears that your device is incompatible with this experience. This warning is caused by your screen resolution being smaller in width than recommended. It's likely you're viewing this on a mobile device, which is problematic for this 3D web application mainly for two reasons:"
-msgstr "It appears that your device is incompatible with this experience. This warning is caused by your screen resolution being smaller in width than recommended. It's likely you're viewing this on a mobile device, which is problematic for this 3D web application mainly for two reasons:"
+#: src/lib/constants.tsx:287
+msgid "Java & Spring Boot — Complete Course"
+msgstr "Java & Spring Boot — Complete Course"
 
-#: src/lib/constants.tsx:98
-msgid "IT troubleshooting"
-msgstr "IT troubleshooting"
-
-#: src/canvases/space/sections/jobExperienceSection/components/JobExperienceTitle.tsx:41
-msgid "Job Experience"
-msgstr "Job Experience"
-
-#: src/lib/constants.tsx:134
-msgid "keeping the volunteers' living space tidy"
-msgstr "keeping the volunteers' living space tidy"
+#: src/lib/constants.tsx:382
+msgid "KuberFashion"
+msgstr "KuberFashion"
 
 #: src/components/LanguageSettingButton.tsx:33
 msgid "language"
@@ -331,25 +257,25 @@ msgstr "language"
 msgid "Language"
 msgstr "Language"
 
+#: src/lib/constants.tsx:85
+msgid "Leading full-stack development of a scalable EdTech platform for learners and educators."
+msgstr "Leading full-stack development of a scalable EdTech platform for learners and educators."
+
 #: src/canvases/space/sections/jobExperienceSection/components/JobExperienceItemDialog.tsx:116
 msgid "Learn more"
 msgstr "Learn more"
 
-#: src/lib/constants.tsx:376
-#~ msgid "Learn to DJ With Just Your Laptop: No DJ Equipment Needed"
-#~ msgstr "Learn to DJ With Just Your Laptop: No DJ Equipment Needed"
+#: src/lib/constants.tsx:136
+msgid "Led frontend development using React and Next.js with modern UI/UX standards"
+msgstr "Led frontend development using React and Next.js with modern UI/UX standards"
 
-#: src/lib/constants.tsx:474
-msgid "LingoType"
-msgstr "LingoType"
+#: src/lib/constants.tsx:358
+msgid "LinkManagement.net"
+msgstr "LinkManagement.net"
 
 #: src/contexts/SettingsContext.tsx:56
 msgid "Low graphics"
 msgstr "Low graphics"
-
-#: src/lib/constants.tsx:395
-msgid "Marketing Psychology and Consumer Behavior"
-msgstr "Marketing Psychology and Consumer Behavior"
 
 #: src/canvases/space/sections/contactSection/components/ContactForm.tsx:172
 msgid "Message"
@@ -363,81 +289,85 @@ msgstr "Message must be at least 3 characters long."
 msgid "Message must be at max 2048 characters long."
 msgstr "Message must be at max 2048 characters long."
 
-#: src/lib/constants.tsx:130
-msgid "monitoring sea turtles nests"
-msgstr "monitoring sea turtles nests"
+#: src/lib/constants.tsx:454
+msgid "MeterSquared — Interior Design Platform"
+msgstr "MeterSquared — Interior Design Platform"
 
 #: src/components/CreditsDialogButton.tsx:60
 msgid "Music by"
 msgstr "Music by"
 
 #: src/canvases/space/sections/heroSection/components/HeroAboutMe.tsx:40
-msgid "My name's Mateusz Muszarski and I'm passionate about programming as well as computer-science. Currently, I'm studying as programming technician in my technical college. "
-msgstr "My name's Mateusz Muszarski and I'm passionate about programming as well as computer-science. Currently, I'm studying as programming technician in my technical college. "
+msgid "My name's Saimands Roy and I'm passionate about building real-world tech that actually matters. Currently, I'm a 3rd year Computer Science Engineering student at ITGGV Bilaspur, on a mission to blend software engineering with artificial intelligence."
+msgstr "My name's Saimands Roy and I'm passionate about building real-world tech that actually matters. Currently, I'm a 3rd year Computer Science Engineering student at ITGGV Bilaspur, on a mission to blend software engineering with artificial intelligence."
 
 #: src/canvases/space/sections/heroSection/components/HeroAboutMe.tsx:44
-msgid "My primary focus lies in full-stack and creative web development, however, I also learned the fundamentals in other digital areas such as 3D computer graphics, graphic design, photo or video editing. "
-msgstr "My primary focus lies in full-stack and creative web development, however, I also learned the fundamentals in other digital areas such as 3D computer graphics, graphic design, photo or video editing. "
+msgid "My primary focus lies in full-stack development and AI systems from crafting scalable backends with Spring Boot and microservices, to designing AI agents powered by Generative AI and Prompt Engineering. I also love sharpening my problem-solving edge through DSA and competitive programming."
+msgstr "My primary focus lies in full-stack development and AI systems from crafting scalable backends with Spring Boot and microservices, to designing AI agents powered by Generative AI and Prompt Engineering. I also love sharpening my problem-solving edge through DSA and competitive programming."
 
-#: src/lib/constants.tsx:174
-#~ msgid "obeying traffic laws"
-#~ msgstr "obeying traffic laws"
+#: src/lib/constants.tsx:101
+msgid "Next.js / Node.js"
+msgstr "Next.js / Node.js"
 
-#: src/lib/constants.tsx:490
-#~ msgid "Old Space Portfolio"
-#~ msgstr "Old Space Portfolio"
+#: src/lib/constants.tsx:146
+msgid "Node.js / REST APIs"
+msgstr "Node.js / REST APIs"
 
-#: src/components/MobileWarning.tsx:42
-msgid "Oops!"
-msgstr "Oops!"
-
-#: src/canvases/space/sections/jobExperienceSection/components/JobExperienceDownloadResume.tsx:77
+#: src/canvases/space/sections/jobExperienceSection/components/JobExperienceDownloadResume.tsx:75
 msgid "OR"
 msgstr "OR"
 
-#: src/canvases/space/sections/heroSection/components/HeroMyOrigin.tsx:70
-msgid "other countries too!"
-msgstr "other countries too!"
+#: src/lib/constants.tsx:406
+msgid "OutreachOS — prane.one"
+msgstr "OutreachOS — prane.one"
 
-#: src/lib/constants.tsx:170
-msgid "Packaging flowers in the Dutch factories"
-msgstr "Packaging flowers in the Dutch factories"
+#: src/lib/constants.tsx:190
+msgid "Payment Gateway Integration"
+msgstr "Payment Gateway Integration"
+
+#: src/lib/constants.tsx:249
+msgid "Placement Head — Central University"
+msgstr "Placement Head — Central University"
 
 #: src/components/CreditsDialogButton.tsx:41
 msgid "Planet textures by"
 msgstr "Planet textures by"
 
-#: src/lib/constants.tsx:84
-msgid "Practices for programming and social skills."
-msgstr "Practices for programming and social skills."
-
-#: src/lib/constants.tsx:82
-msgid "Programmer (intern)"
-msgstr "Programmer (intern)"
+#: src/lib/constants.tsx:307
+msgid "Problem Solving Certificate"
+msgstr "Problem Solving Certificate"
 
 #: src/canvases/space/sections/projectsSection/components/ProjectsTitle.tsx:32
 msgid "Projects"
 msgstr "Projects"
 
-#: src/lib/constants.tsx:136
-msgid "promoting our home town and organizing events"
-msgstr "promoting our home town and organizing events"
+#: src/lib/constants.tsx:189
+msgid "React / Frontend Development"
+msgstr "React / Frontend Development"
 
-#: src/lib/constants.tsx:426
-msgid "React ClickMe"
-msgstr "React ClickMe"
+#: src/lib/constants.tsx:145
+msgid "React / Next.js"
+msgstr "React / Next.js"
 
-#: src/lib/constants.tsx:131
-msgid "rescuing hatchlings"
-msgstr "rescuing hatchlings"
+#: src/lib/constants.tsx:169
+msgid "Remote"
+msgstr "Remote"
 
-#: src/lib/constants.tsx:127
-msgid "Rescuing threatened species of sea turtles and cleaning up the local environment alongside other foreign volunteers."
-msgstr "Rescuing threatened species of sea turtles and cleaning up the local environment alongside other foreign volunteers."
+#: src/lib/constants.tsx:148
+msgid "Remote collaboration"
+msgstr "Remote collaboration"
+
+#: src/lib/constants.tsx:125
+msgid "Remote, India"
+msgstr "Remote, India"
 
 #: src/components/ResetSettingsDialogButton.tsx:53
 msgid "Reset all"
 msgstr "Reset all"
+
+#: src/lib/constants.tsx:191
+msgid "REST APIs / Node.js"
+msgstr "REST APIs / Node.js"
 
 #: src/components/ScrollIndicator.tsx:44
 msgid "SCROLL"
@@ -447,13 +377,13 @@ msgstr "SCROLL"
 msgid "Search"
 msgstr "Search"
 
-#: src/lib/constants.tsx:145
-msgid "self-motivation"
-msgstr "self-motivation"
-
 #: src/canvases/space/sections/contactSection/components/ContactForm.tsx:208
 msgid "Send"
 msgstr "Send"
+
+#: src/lib/constants.tsx:126
+msgid "Senior Software Engineer"
+msgstr "Senior Software Engineer"
 
 #: src/canvases/space/sections/certificatesSection/components/CertificatesList.tsx:89
 msgid "Show less"
@@ -481,14 +411,6 @@ msgstr "Sounds"
 msgid "Source code 💻"
 msgstr "Source code 💻"
 
-#: src/lib/constants.tsx:396
-#~ msgid "Speak Any Language in 10 Days - Conversational lvl [2024]"
-#~ msgstr "Speak Any Language in 10 Days - Conversational lvl [2024]"
-
-#: src/lib/constants.tsx:81
-msgid "Starogard Gdański, Pomerania, Poland"
-msgstr "Starogard Gdański, Pomerania, Poland"
-
 #: src/components/StartupScreen.tsx:185
 msgid "START"
 msgstr "START"
@@ -509,78 +431,38 @@ msgstr "Subject must be at max 64 characters long."
 msgid "Successfully sent the mail!"
 msgstr "Successfully sent the mail!"
 
-#: src/lib/constants.tsx:137
-msgid "taking pictures and videos for the national agency"
-msgstr "taking pictures and videos for the national agency"
+#: src/lib/constants.tsx:103
+msgid "System Architecture"
+msgstr "System Architecture"
 
-#: src/lib/constants.tsx:87
-msgid "technical support"
-msgstr "technical support"
+#: src/lib/constants.tsx:147
+msgid "Tailwind CSS"
+msgstr "Tailwind CSS"
 
-#: src/lib/constants.tsx:316
-msgid "The Complete JavaScript Course 2023: From Zero to Expert!"
-msgstr "The Complete JavaScript Course 2023: From Zero to Expert!"
-
-#: src/lib/constants.tsx:297
-msgid "The Ultimate React Course 2024: React, Next.js, Redux & More"
-msgstr "The Ultimate React Course 2024: React, Next.js, Redux & More"
-
-#: src/components/ResetSettingsDialogButton.tsx:40
-#~ msgid ""
-#~ "This action cannot be undone. This will permanently delete all of\n"
-#~ "            your local storage data and totally refresh the experience."
-#~ msgstr ""
-#~ "This action cannot be undone. This will permanently delete all of\n"
-#~ "            your local storage data and totally refresh the experience."
+#: src/lib/constants.tsx:104
+msgid "Team Leadership"
+msgstr "Team Leadership"
 
 #: src/components/ResetSettingsDialogButton.tsx:45
 msgid "This action cannot be undone. This will permanently delete all of your local storage data and totally refresh the experience."
 msgstr "This action cannot be undone. This will permanently delete all of your local storage data and totally refresh the experience."
 
-#: src/lib/constants.tsx:277
-msgid "Three.js Journey — Learn WebGL with Three.js"
-msgstr "Three.js Journey — Learn WebGL with Three.js"
-
-#: src/lib/constants.tsx:416
-#~ msgid "Three.js, React Three Fiber, Drei, React Spring & More"
-#~ msgstr "Three.js, React Three Fiber, Drei, React Spring & More"
-
-#: src/lib/constants.tsx:143
-msgid "time management"
-msgstr "time management"
-
-#: src/lib/constants.tsx:375
-msgid "UX Writing: Microcopy, User Research, Accessibility & More"
-msgstr "UX Writing: Microcopy, User Research, Accessibility & More"
-
-#: src/lib/constants.tsx:173
-msgid "verifying packages integrity"
-msgstr "verifying packages integrity"
-
 #: src/canvases/space/sections/projectsSection/components/ProjectsItemCard.tsx:115
 msgid "View it live 🚀"
 msgstr "View it live 🚀"
 
-#: src/canvases/space/sections/jobExperienceSection/components/JobExperienceDownloadResume.tsx:95
+#: src/canvases/space/sections/jobExperienceSection/components/JobExperienceDownloadResume.tsx:93
 msgid "Visit LinkedIn"
 msgstr "Visit LinkedIn"
-
-#: src/components/MobileWarning.tsx:85
-msgid "Visit old portfolio"
-msgstr "Visit old portfolio"
 
 #: src/components/AudioSettingButton.tsx:74
 msgid "Volume"
 msgstr "Volume"
 
-#: src/lib/constants.tsx:91
-msgid "writing and creating social media posts"
-msgstr "writing and creating social media posts"
+#: src/lib/constants.tsx:82
+msgid "Web Development Lead & Core Member"
+msgstr "Web Development Lead & Core Member"
 
-#: src/lib/constants.tsx:199
-msgid "Youth Entrepreneurship in Palanga, Lithuania"
-msgstr "Youth Entrepreneurship in Palanga, Lithuania"
-
-#: src/lib/constants.tsx:496
-msgid "Youth Work Synergy"
-msgstr "Youth Work Synergy"
+#: src/canvases/space/sections/jobExperienceSection/components/JobExperienceTitle.tsx:41
+msgid "Where I've Shipped 🚀"
+msgstr "Where I've Shipped 🚀"
