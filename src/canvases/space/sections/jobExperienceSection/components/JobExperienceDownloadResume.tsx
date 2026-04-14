@@ -7,14 +7,12 @@ import useAnimateObjectVisibility from "@/canvases/hooks/useAnimateObjectVisibil
 import { jobExperienceDownloadResumeScrollProgress } from "@/canvases/space/components/CameraControls";
 import { Linkedin } from "@/components/icons";
 import { Button } from "@/components/ui/button";
-import { useLanguage } from "@/contexts/LanguageContext";
 import { useScrollContext } from "@/contexts/ScrollContext";
 import { LINKEDIN_LINK } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 function JobExperienceDownloadResume() {
   const { t } = useLingui();
-  const { language } = useLanguage();
   const { scrollProgress } = useScrollContext();
 
   // Hide text when the current section viewed is not appriopriate for it to appear
@@ -36,7 +34,7 @@ function JobExperienceDownloadResume() {
     <Html wrapperClass="z-[1424429000]" center position={[3, 0, -80]}>
       <div
         className={cn(
-          "flex flex-col gap-4 w-90",
+          "flex flex-col gap-4 w-[min(21rem,calc(100vw-2rem))] sm:w-90",
           scrollProgress !== jobExperienceDownloadResumeScrollProgress
             ? "pointer-events-none select-none"
             : ""
@@ -44,7 +42,7 @@ function JobExperienceDownloadResume() {
       >
         {/* Download resume */}
         <a
-          href={`/Mateusz_Muszarski_résumé_${language}.pdf`}
+          href="/Saimands_Roy_FullStack.pdf"
           tabIndex={-1}
           target="_blank"
           download
@@ -59,7 +57,7 @@ function JobExperienceDownloadResume() {
                 : undefined
             }
             variant="outline"
-            className="text-2xl py-7 px-10 bg-foreground/25! w-full border-foreground/40! hover:bg-foreground/40! focus-visible:bg-foreground/40! border-2 "
+            className="text-lg sm:text-2xl py-5 sm:py-7 px-6 sm:px-10 bg-foreground/25! w-full border-foreground/40! hover:bg-foreground/40! focus-visible:bg-foreground/40! border-2 "
           >
             {t`Download résumé`}
             <span className="font-emoji">📝</span>
@@ -90,7 +88,7 @@ function JobExperienceDownloadResume() {
               materialsToHideRefs.current.push(el as HTMLButtonElement);
             }}
             variant="outline"
-            className="text-2xl py-7 px-10 w-full border-background/30! bg-blue-500/80! hover:bg-blue-500! focus-visible:bg-blue-500! border-2 "
+            className="text-lg sm:text-2xl py-5 sm:py-7 px-6 sm:px-10 w-full border-background/30! bg-blue-500/80! hover:bg-blue-500! focus-visible:bg-blue-500! border-2 "
           >
             {t`Visit LinkedIn`}
             <Linkedin className="size-6 fill-foreground stroke-[0.5] bg-blue-600 p-[3px] rounded-sm" />

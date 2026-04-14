@@ -46,7 +46,7 @@ function HeroWelcomeText() {
             position={[3, 1, -12.5]}
             font="/assets/fonts/Space_Grotesk_Bold.json"
           >
-            MUSZARSKI
+            Saimands
             <meshMatcapMaterial
               matcap={matcapTextureSilver}
               ref={(el) =>

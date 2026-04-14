@@ -47,7 +47,7 @@ function AnimateDocumentTitle() {
       case "ready": {
         const titles = [
           `🔴 Ready for launch! 🔴`,
-          "Mateusz Muszarski | Portfolio",
+          "Saimands Roy | Portfolio",
         ];
         const progress = { value: 0 };
 

@@ -18,12 +18,12 @@ function HeroAboutMe() {
   return (
     <group>
       {/* Title */}
-      <Html className="select-none pointer-events-none" position={[1, 3, -16]}>
+      <Html className="select-none pointer-events-none px-4" position={[1, 3, -16]}>
         <h1
           ref={(el) => {
             materialsToHideRefs.current.push(el as HTMLHeadingElement);
           }}
-          className="opacity-0 text-gold-gradient text-6xl font-bold pb-4"
+          className="opacity-0 text-gold-gradient text-4xl sm:text-6xl font-bold pb-4"
         >
           {t`About me `}
           <span className="font-emoji text-foreground">👋</span>
@@ -34,18 +34,18 @@ function HeroAboutMe() {
           ref={(el) => {
             materialsToHideRefs.current.push(el as HTMLParagraphElement);
           }}
-          className="opacity-0 text-gold-gradient text-xl font-semibold w-sm flex flex-col gap-4"
+          className="opacity-0 text-gold-gradient text-base sm:text-xl font-semibold w-[min(22rem,calc(100vw-2rem))] sm:w-sm flex flex-col gap-4"
         >
           <span>
-            {t`My name's Mateusz Muszarski and I'm passionate about programming as well as computer-science. Currently, I'm studying as programming technician in my technical college. `}
+            {t`My name's Saimands Roy and I'm passionate about building real-world tech that actually matters. Currently, I'm a 3rd year Computer Science Engineering student at ITGGV Bilaspur, on a mission to blend software engineering with artificial intelligence.`}
             <span className="font-emoji text-foreground">🎓</span>
           </span>
           <span>
-            {t`My primary focus lies in full-stack and creative web development, however, I also learned the fundamentals in other digital areas such as 3D computer graphics, graphic design, photo or video editing. `}
+            {t`My primary focus lies in full-stack development and AI systems from crafting scalable backends with Spring Boot and microservices, to designing AI agents powered by Generative AI and Prompt Engineering. I also love sharpening my problem-solving edge through DSA and competitive programming.`}
             <span className="font-emoji text-foreground">🎨</span>
           </span>
           <span>
-            {t`Beyond technology, I enjoy a range of other activites including working out, traveling, photography, swimming and many more! `}
+            {t`Beyond the screen, I believe in learning by doing turning curiosity into production-grade projects and real experiments. I'm open to internships, collaborations, and connecting with fellow builders, mentors, or recruiters. If you're working on something exciting, let's talk!`}
             <span className="font-emoji text-foreground">✨</span>
           </span>
         </p>

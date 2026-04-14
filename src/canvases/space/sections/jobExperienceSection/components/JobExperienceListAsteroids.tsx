@@ -17,6 +17,23 @@ import {
   type JobExperienceItemDialogData,
 } from "@/lib/constants";
 
+function getContainedPlaneSize(
+  texture: THREE.Texture,
+  maxWidth: number,
+  maxHeight: number
+) {
+  const image = texture.image as { width?: number; height?: number } | undefined;
+  const imageWidth = image?.width ?? maxWidth;
+  const imageHeight = image?.height ?? maxHeight;
+  const aspectRatio = imageWidth / imageHeight;
+
+  if (aspectRatio >= 1) {
+    return [maxWidth, maxWidth / aspectRatio] as const;
+  }
+
+  return [maxHeight * aspectRatio, maxHeight] as const;
+}
+
 function JobExperienceListAsteroids() {
   const [beniaminekTexture, escTexture, ruigrokTexture] =
     useLoadJobExperienceListAsteroidsTextures();
@@ -63,6 +80,22 @@ function JobExperienceListAsteroids() {
   );
   if (!isRendered) return;
 
+  const [beniaminekPlaneWidth, beniaminekPlaneHeight] = getContainedPlaneSize(
+    beniaminekTexture,
+    5.5,
+    5.5
+  );
+  const [escPlaneWidth, escPlaneHeight] = getContainedPlaneSize(
+    escTexture,
+    14,
+    5
+  );
+  const [ruigrokPlaneWidth, ruigrokPlaneHeight] = getContainedPlaneSize(
+    ruigrokTexture,
+    13,
+    6
+  );
+
   return (
     <>
       {/* Job experience item details dialog window */}
@@ -97,8 +130,9 @@ function JobExperienceListAsteroids() {
               }
               map={beniaminekTexture}
               transparent
+              toneMapped={false}
             />
-            <planeGeometry args={[5.5, 5.5]} />
+            <planeGeometry args={[beniaminekPlaneWidth, beniaminekPlaneHeight]} />
           </mesh>
         </Float>
       </group>
@@ -128,8 +162,9 @@ function JobExperienceListAsteroids() {
               }
               map={escTexture}
               transparent
+              toneMapped={false}
             />
-            <planeGeometry args={[14, 5]} />
+            <planeGeometry args={[escPlaneWidth, escPlaneHeight]} />
           </mesh>
         </Float>
       </group>
@@ -159,8 +194,9 @@ function JobExperienceListAsteroids() {
               }
               map={ruigrokTexture}
               transparent
+              toneMapped={false}
             />
-            <planeGeometry args={[13, 6]} />
+            <planeGeometry args={[ruigrokPlaneWidth, ruigrokPlaneHeight]} />
           </mesh>
         </Float>
       </group>

@@ -26,7 +26,7 @@ function CertificatesTitle() {
         ref={(el) => {
           materialsToHideRefs.current.push(el as HTMLHeadingElement);
         }}
-        className="w-max text-amber-gradient text-center opacity-0 text-7xl flex items-center gap-2 font-bold"
+        className="w-max text-amber-gradient text-center opacity-0 text-5xl sm:text-7xl flex items-center gap-2 font-bold"
       >
         <span>{t`Certificates`}</span>
       </h3>

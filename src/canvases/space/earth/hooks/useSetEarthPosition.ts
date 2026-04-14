@@ -37,7 +37,7 @@ function useSetEarthPosition(
   useFrame((_, delta) => {
     // Rotate the Earth on its own axis
     if (!earthRef.current) return;
-    earthRef.current.rotation.y += delta * 0.1;
+    earthRef.current.rotation.y += delta * 0.14;
   });
 }
 

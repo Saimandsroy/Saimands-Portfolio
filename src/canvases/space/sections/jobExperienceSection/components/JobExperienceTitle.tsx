@@ -36,9 +36,9 @@ function JobExperienceTitle() {
         ref={(el) => {
           materialsToHideRefs.current.push(el as HTMLHeadingElement);
         }}
-        className="w-max text-red-gradient text-center opacity-0 text-6xl flex items-center gap-2 font-bold"
+        className="w-max text-red-gradient text-center opacity-0 text-4xl sm:text-6xl flex items-center gap-2 font-bold"
       >
-        <span>{t`Job Experience`}</span>
+        <span>{t`Where I've Shipped 🚀`}</span>
       </h3>
     </Html>
   );

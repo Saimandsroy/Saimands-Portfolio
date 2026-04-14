@@ -3,6 +3,7 @@ import { useRef } from "react";
 import * as THREE from "three";
 
 import useUpdateShaderUniforms from "@/canvases/hooks/useUpdateShaderUniforms";
+import EarthLocationMarkers from "@/canvases/space/earth/components/EarthLocationMarkers";
 import useEarthDebugControls from "@/canvases/space/earth/hooks/useEarthDebugControls";
 import useLoadEarthTextures from "@/canvases/space/earth/hooks/useLoadEarthTextures";
 import useSetEarthPosition from "@/canvases/space/earth/hooks/useSetEarthPosition";
@@ -111,6 +112,8 @@ function EarthModel() {
           transparent
         />
       </mesh>
+
+      <EarthLocationMarkers />
     </group>
   );
 }

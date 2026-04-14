@@ -15,8 +15,8 @@ function TopBar() {
   const { hasStartedExperience } = useSettingsContext();
 
   return (
-    <nav className="fixed top-0 left-0 w-screen py-2 px-8 z-50 justify-between flex items-center">
-      <div className="flex items-center gap-2.5">
+    <nav className="fixed top-0 left-0 w-screen py-2 px-3 sm:px-8 z-50 justify-between flex items-center gap-2">
+      <div className="flex items-center gap-2 min-w-0">
         {/* GitHub avatar link */}
         <a
           tabIndex={!hasStartedExperience ? -1 : undefined}
@@ -37,24 +37,26 @@ function TopBar() {
           href={`mailto:${CONTACT_EMAIL}`}
           target="_blank"
         >
-          {CONTACT_EMAIL}
+          <span className="block max-w-[42vw] truncate sm:max-w-none">
+            {CONTACT_EMAIL}
+          </span>
         </a>
       </div>
 
-      <div className="flex items-center gap-1.5">
+      <div className="flex items-center gap-1 sm:gap-1.5 shrink-0">
         {/* Settings buttons */}
         <LanguageSettingButton
-          buttonClassName="size-8 p-2 text-xs"
+          buttonClassName="size-7 p-1.5 text-[0.65rem] sm:size-8 sm:p-2 sm:text-xs"
           buttonVariant="outline"
           tabIndex={!hasStartedExperience ? -1 : undefined}
         />
         <GraphicsSettingButton
-          buttonClassName="size-8 p-2 focus:outline-red-500! text-xs"
+          buttonClassName="size-7 p-1.5 focus:outline-red-500! text-[0.65rem] sm:size-8 sm:p-2 sm:text-xs"
           buttonVariant="outline"
           tabIndex={!hasStartedExperience ? -1 : undefined}
         />
         <AudioSettingButton
-          buttonClassName="size-8 p-2 text-xs"
+          buttonClassName="size-7 p-1.5 text-[0.65rem] sm:size-8 sm:p-2 sm:text-xs"
           buttonVariant="outline"
           tabIndex={!hasStartedExperience ? -1 : undefined}
         />

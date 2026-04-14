@@ -2,32 +2,32 @@ import { i18n } from "@lingui/core";
 import { t } from "@lingui/core/macro";
 
 import {
-  BlenderLogo,
-  JavaScriptLogo,
+  ApiLogo,
+  JavaLogo,
   NextJsLogo,
-  NpmLogo,
+  NodeJsLogo,
+  PhonePeLogo,
+  PostgreSqlLogo,
   ReactLogo,
-  ReactRouterLogo,
+  RedisLogo,
+  SpringBootLogo,
   TailwindCssLogo,
-  TanstackQueryLogo,
-  ThreeJsLogo,
   TypeScriptLogo,
 } from "@/components/icons";
-import ExpoLogo from "@/components/icons/ExpoLogo";
 
 // EmailJS
-export const EMAILJS_PUBLIC_KEY = "Unh7wKuX7D61UVGOX";
-export const EMAILJS_SERVICE_ID = "service_ygvcefb";
-export const EMAILJS_TEMPLATE_ID = "template_4e3jgyp";
+export const EMAILJS_PUBLIC_KEY = "mF8cauSRsQ7AxzVBf";
+export const EMAILJS_SERVICE_ID = "hello_123";
+export const EMAILJS_TEMPLATE_ID = "template_6jp5ybh";
 
 // Links
-export const CONTACT_EMAIL = "mat.muszarski@gmail.com";
-export const GITHUB_LINK = "https://github.com/MuchaSsak";
+export const CONTACT_EMAIL = "saimandsroy@gmail.com";
+export const GITHUB_LINK = "https://github.com/Saimandsroy";
 export const GITHUB_AVATAR_LINK =
-  "https://avatars.githubusercontent.com/u/107958275?v=4";
+  "https://github.com/Saimandsroy.png";
 export const INSTAGRAM_LINK = "https://www.instagram.com/mat.muszarski/";
 export const LINKEDIN_LINK =
-  "https://www.linkedin.com/in/mateusz-muszarski-b1168a28a/";
+  "https://www.linkedin.com/in/saimands-roy-887a78234/";
 export const WEBSITE_LINK = "https://matmuszarski.space";
 export const OLD_PORTFOLIO_WEBSITE_LINK = "https://2d.matmuszarski.space";
 
@@ -63,121 +63,133 @@ export type JobExperienceItemDialogData = {
 };
 export const JOB_EXPERIENCE_LIST = {
   beniaminek: {
-    logoImgSrc: "/assets/textures/asteroids/beniaminek_logo.png",
-    learnMoreUrl: "http://beniaminek03.pl/",
-    countryEmoji: "🇵🇱",
+    logoImgSrc: "/assets/textures/asteroids/plecos-logo.png",
+    learnMoreUrl: "https://kuberfashions.in",
+    countryEmoji: "🇮🇳",
     StartedDate: () =>
-      i18n.date(new Date("05-07-2025"), {
+      i18n.date(new Date("08-01-2025"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
     EndedDate: () =>
-      i18n.date(new Date("05-30-2025"), {
+      i18n.date(new Date("10-31-2025"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
-    Location: () => t`Starogard Gdański, Pomerania, Poland`,
-    Occupation: () => t`Programmer (intern)`,
-    company: "Klub Sportowy Beniaminek 03",
-    Description: () => t`Practices for programming and social skills.`,
+    Location: () => t`Bengaluru, India`,
+    Occupation: () => t`Web Development Lead & Core Member`,
+    company: "PLECOS",
+    Description: () =>
+      t`Leading full-stack development of a scalable EdTech platform for learners and educators.`,
     Responsibilities: () => (
       <>
-        <li>{t`technical support`}</li>
-        <li>{t`developing a website`}</li>
-        <li>{t`helping other employees with various problems`}</li>
-        <li>{t`creating spreadsheets`}</li>
-        <li>{t`writing and creating social media posts`}</li>
-        <li>{t`attending meetings with volunteers`}</li>
+        <li>
+          {t`Architected scalable applications with Next.js, Node.js, and DynamoDB`}
+        </li>
+        <li>
+          {t`Built learner and educator dashboards with live classes, video uploads, and test modules`}
+        </li>
+        <li>
+          {t`Integrated Kafka and Redis for real-time communication and caching`}
+        </li>
       </>
     ),
     SkillsNeeded: () => (
       <>
-        <li>{t`front-end development`}</li>
-        <li>{t`IT troubleshooting`}</li>
-        <li>{t`flexibility`}</li>
-        <li>{t`helpfulness`}</li>
-        <li>{t`foreign languages`}</li>
+        <li>{t`Next.js / Node.js`}</li>
+        <li>{t`DynamoDB / Redis / Kafka`}</li>
+        <li>{t`System Architecture`}</li>
+        <li>{t`Team Leadership`}</li>
       </>
     ),
   } as JobExperienceItemDialogData,
 
   esc: {
-    logoImgSrc: "/assets/textures/asteroids/esc_logo.png",
-    learnMoreUrl:
-      "https://lidosk.org/en/announcements/caretta-caretta-2025-esc-team-volunteering-project-application-form",
-    countryEmoji: "🇹🇷",
+    logoImgSrc: "/assets/textures/asteroids/femur-logo.jpg",
+    learnMoreUrl: "https://femur.studio",
+    countryEmoji: "🇮🇳",
     StartedDate: () =>
-      i18n.date(new Date("07-14-2025"), {
+      i18n.date(new Date("12-01-2025"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
     EndedDate: () =>
-      i18n.date(new Date("09-08-2025"), {
+      i18n.date(new Date("03-31-2026"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
-    Location: () => `Demre, Antalya, Türkiye`,
-    Occupation: () => t`European Solidarity Corps group volunteer`,
-    company: "LIDOSK",
+    Location: () => t`Remote, India`,
+    Occupation: () => t`Senior Software Engineer`,
+    company: "Femur Studio",
     Description: () =>
-      t`Rescuing threatened species of sea turtles and cleaning up the local environment alongside other foreign volunteers.`,
+      t`Building and scaling full-stack digital products for a creative tech studio.`,
     Responsibilities: () => (
       <>
-        <li>{t`monitoring sea turtles nests`}</li>
-        <li>{t`rescuing hatchlings`}</li>
-        <li>{t`analyzing nearby threats to the animals and getting rid of them`}</li>
-        <li>{t`cleaning up local beaches from garbage`}</li>
-        <li>{t`keeping the volunteers' living space tidy`}</li>
-        <li>{t`attending mentor on-site and onine meetings`}</li>
-        <li>{t`promoting our home town and organizing events`}</li>
-        <li>{t`taking pictures and videos for the national agency`}</li>
+        <li>
+          {t`Architected and shipped full-stack features across multiple client projects`}
+        </li>
+        <li>
+          {t`Led frontend development using React and Next.js with modern UI/UX standards`}
+        </li>
+        <li>
+          {t`Collaborated remotely with cross-functional teams on product delivery and deadlines`}
+        </li>
       </>
     ),
     SkillsNeeded: () => (
       <>
-        <li>{t`foreign languages`}</li>
-        <li>{t`time management`}</li>
-        <li>{t`adaptibility`}</li>
-        <li>{t`self-motivation`}</li>
+        <li>{t`React / Next.js`}</li>
+        <li>{t`Node.js / REST APIs`}</li>
+        <li>{t`Tailwind CSS`}</li>
+        <li>{t`Remote collaboration`}</li>
       </>
     ),
   } as JobExperienceItemDialogData,
 
   ruigrok: {
-    logoImgSrc:
-      "https://speciaalreiniging.nl/wp-content/uploads/2023/10/Ruigrok_logo-clear.png",
-    learnMoreUrl: "https://www.ruigrokpraca.pl/",
-    countryEmoji: "🇳🇱",
+    logoImgSrc: "/assets/textures/asteroids/dextop-logo.png",
+    learnMoreUrl: "https://chotubot.com",
+    countryEmoji: "🌐",
     StartedDate: () =>
-      i18n.date(new Date("12-13-2025"), {
+      i18n.date(new Date("11-01-2025"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
     EndedDate: () =>
-      i18n.date(new Date("02-08-2026"), {
+      i18n.date(new Date("12-31-2025"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
-    Location: () => t`Aalsmeer, Netherlands`,
-    Occupation: () => t`Blue-collar worker`,
-    company: "Ruigrok",
-    Description: () => t`Packaging flowers in the Dutch factories`,
+    Location: () => t`Remote`,
+    Occupation: () => t`Full Stack Intern`,
+    company: "Dextop",
+    Description: () =>
+      t`Contributed to ChhotuBot.com — an AI-powered chatbot platform serving real users.`,
     Responsibilities: () => (
       <>
-        <li>{t`verifying packages integrity`}</li>
-        <li>{t`delivering crates to specific cold rooms`}</li>
-        <li>{t`avoiding the whole process from stopping or being delayed`}</li>
+        <li>
+          {t`Integrated a full payment gateway flow for ChhotuBot.com enabling seamless user subscriptions`}
+        </li>
+        <li>
+          {t`Built and shipped core frontend components with React for the chatbot interface`}
+        </li>
+        <li>
+          {t`Collaborated on API integrations connecting frontend with AI bot response workflows`}
+        </li>
       </>
     ),
     SkillsNeeded: () => (
       <>
-        <li>{t`adaptibility`}</li>
+        <li>{t`React / Frontend Development`}</li>
+        <li>{t`Payment Gateway Integration`}</li>
+        <li>{t`REST APIs / Node.js`}</li>
+        <li>{t`AI Integration`}</li>
       </>
     ),
   } as JobExperienceItemDialogData,
@@ -196,56 +208,114 @@ export type CertificateData = {
 
 export const CERTIFICATES_LIST: CertificateData[] = [
   {
-    Title: () => t`Youth Entrepreneurship in Palanga, Lithuania`,
-    authorName: "Elektrėnų kultūros centras",
-    websiteLink: "https://kcelektrenai.lt/",
+    Title: () => t`GDSC Gen AI Study Jams`,
+    authorName: "Google Developer Student Clubs, GGV",
+    websiteLink: "https://developers.google.com/profile/badges",
     StartedDate: () =>
-      i18n.date(new Date("07-11-2025"), {
+      i18n.date(new Date("05-29-2024"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
     EndedDate: () =>
-      i18n.date(new Date("07-16-2025"), {
+      i18n.date(new Date("05-29-2024"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
-    Icon: () => <span className="font-emoji">💼</span>,
+    Icon: () => <span className="font-emoji">🤖</span>,
     isRelevant: true,
   },
   {
-    Title: () =>
-      t`Developing Infrastructure to Work with Youth in Daugirdiškės, Lithuania`,
-    authorName: "Elektrėnų kultūros centras",
-    websiteLink: "https://kcelektrenai.lt/",
+    Title: () => t`Equilibrio Techfest — Tech Lead`,
+    authorName: "GGU Bilaspur",
+    websiteLink: "https://ggu.ac.in",
     StartedDate: () =>
-      i18n.date(new Date("06-11-2025"), {
+      i18n.date(new Date("03-01-2025"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
     EndedDate: () =>
-      i18n.date(new Date("06-16-2025"), {
+      i18n.date(new Date("03-31-2025"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
-    Icon: () => <span className="font-emoji">🏗️</span>,
+    Icon: () => <span className="font-emoji">⚡</span>,
     isRelevant: true,
   },
   {
-    Title: () => t`Digital Youth Work Methods in Saraiķi, Latvia`,
-    authorName: "YOU+",
-    websiteLink: "https://www.youpluss.lv/",
+    Title: () => t`Placement Head — Central University`,
+    authorName: "Guru Ghasidas Vishwavidyalaya",
+    websiteLink: "https://ggu.ac.in",
     StartedDate: () =>
-      i18n.date(new Date("05-27-2025"), {
+      i18n.date(new Date("01-01-2025"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
     EndedDate: () =>
-      i18n.date(new Date("06-06-2025"), {
+      i18n.date(new Date(), {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+      }),
+    Icon: () => <span className="font-emoji">🎓</span>,
+    isRelevant: true,
+  },
+  {
+    Title: () => t`IEEE Winner — India Global Representative`,
+    authorName: "IEEE",
+    websiteLink: "https://ieee.org",
+    StartedDate: () =>
+      i18n.date(new Date("09-01-2025"), {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+      }),
+    EndedDate: () =>
+      i18n.date(new Date("09-30-2025"), {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+      }),
+    Icon: () => <span className="font-emoji">🏆</span>,
+    isRelevant: true,
+  },
+  {
+    Title: () => t`Java & Spring Boot — Complete Course`,
+    authorName: "Udemy",
+    websiteLink:
+      "https://www.udemy.com/course/spring-boot-tutorial-for-beginners",
+    StartedDate: () =>
+      i18n.date(new Date("12-01-2024"), {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+      }),
+    EndedDate: () =>
+      i18n.date(new Date("12-31-2024"), {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+      }),
+    Icon: () => <span className="font-emoji">☕</span>,
+    isRelevant: true,
+  },
+  {
+    Title: () => t`Problem Solving Certificate`,
+    authorName: "HackerRank",
+    websiteLink:
+      "https://www.hackerrank.com/skills-verification/problem_solving_basic",
+    StartedDate: () =>
+      i18n.date(new Date("10-01-2024"), {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+      }),
+    EndedDate: () =>
+      i18n.date(new Date("10-31-2024"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
@@ -254,160 +324,22 @@ export const CERTIFICATES_LIST: CertificateData[] = [
     isRelevant: true,
   },
   {
-    Title: () =>
-      t`Alternative Participation of Rural Youth in Bakuriani, Georgia`,
-    authorName: "Umbrella",
-    websiteLink: "https://umbrellayouth.org/",
+    Title: () => t`Generative AI Fundamentals`,
+    authorName: "Google Cloud Skills Boost",
+    websiteLink: "https://cloudskillsboost.google/paths/118",
     StartedDate: () =>
-      i18n.date(new Date("05-08-2025"), {
+      i18n.date(new Date("03-01-2025"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
     EndedDate: () =>
-      i18n.date(new Date("05-08-2025"), {
+      i18n.date(new Date("03-31-2025"), {
         day: "2-digit",
         month: "2-digit",
         year: "2-digit",
       }),
-    Icon: () => <span className="font-emoji">📢</span>,
-    isRelevant: true,
-  },
-  {
-    Title: () => t`Three.js Journey — Learn WebGL with Three.js`,
-    authorName: "Bruno Simon",
-    websiteLink: "https://threejs-journey.com",
-    StartedDate: () =>
-      i18n.date(new Date("12-02-2024"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    EndedDate: () =>
-      i18n.date(new Date("01-30-2025"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    Icon: () => <ThreeJsLogo />,
-    isRelevant: true,
-  },
-  {
-    Title: () =>
-      t`The Ultimate React Course 2024: React, Next.js, Redux & More`,
-    authorName: "Jonas Schmedtmann",
-    websiteLink: "https://www.udemy.com/course/the-ultimate-react-course/",
-    StartedDate: () =>
-      i18n.date(new Date("08-27-2023"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    EndedDate: () =>
-      i18n.date(new Date("12-30-2023"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    Icon: () => <ReactLogo />,
-    isRelevant: true,
-  },
-  {
-    Title: () => t`The Complete JavaScript Course 2023: From Zero to Expert!`,
-    authorName: "Jonas Schmedtmann",
-    websiteLink: "https://www.udemy.com/course/the-complete-javascript-course/",
-    StartedDate: () =>
-      i18n.date(new Date("03-28-2023"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    EndedDate: () =>
-      i18n.date(new Date("09-10-2023"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    Icon: () => <JavaScriptLogo />,
-    isRelevant: true,
-  },
-  {
-    Title: () => t`Complete Blender Megacourse: Beginner to Expert`,
-    authorName: "Skillademia Academy",
-    websiteLink:
-      "https://www.udemy.com/course/complete-blender-megacourse-beginner-to-expert/",
-    StartedDate: () =>
-      i18n.date(new Date("07-21-2023"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    EndedDate: () =>
-      i18n.date(new Date("08-13-2023"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    Icon: () => <BlenderLogo />,
-    isRelevant: true,
-  },
-  {
-    Title: () =>
-      t`CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam`,
-    authorName: "Jason Dion",
-    websiteLink: "https://www.udemy.com/course/comptia-a-core-1/",
-    StartedDate: () =>
-      i18n.date(new Date("03-19-2023"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    EndedDate: () =>
-      i18n.date(new Date("04-11-2023"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    Icon: () => <span className="font-emoji">🛠️</span>,
-    isRelevant: true,
-  },
-  {
-    Title: () => t`UX Writing: Microcopy, User Research, Accessibility & More`,
-    authorName: "Proficient Courses",
-    websiteLink:
-      "https://www.udemy.com/course/ux-writing-the-art-of-user-centered-copy/",
-    StartedDate: () =>
-      i18n.date(new Date("09-03-2025"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    EndedDate: () =>
-      i18n.date(new Date("09-11-2025"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    Icon: () => <span className="font-emoji">✍️</span>,
-    isRelevant: false,
-  },
-  {
-    Title: () => t`Marketing Psychology and Consumer Behavior`,
-    authorName: "Proficient Courses",
-    websiteLink: "https://www.udemy.com/course/marketing-psychology/",
-    StartedDate: () =>
-      i18n.date(new Date("08-28-2025"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    EndedDate: () =>
-      i18n.date(new Date("09-03-2025"), {
-        day: "2-digit",
-        month: "2-digit",
-        year: "2-digit",
-      }),
-    Icon: () => <span className="font-emoji">🧠</span>,
+    Icon: () => <span className="font-emoji">☁️</span>,
     isRelevant: false,
   },
 ];
@@ -423,155 +355,111 @@ export type ProjectData = {
 };
 export const PROJECTS_LIST: ProjectData[] = [
   {
-    Title: () => t`React ClickMe`,
+    Title: () => t`LinkManagement.net`,
     Description: () =>
-      t`A react library full of highly customizable and animated buttons out of the box. This project includes an SPA for documentation and an NPM package 👉`,
+      t`A production-grade SEO workflow platform serving 60K+ active bloggers with automated link-building pipelines, multi-tier approvals, and a secure digital wallet for contractor payouts.`,
     Icons: () => (
       <>
-        <li>
-          <TypeScriptLogo className="size-9" />
-        </li>
         <li>
           <ReactLogo className="size-9" />
         </li>
         <li>
-          <NpmLogo className="size-9" />
+          <NodeJsLogo className="size-9" />
         </li>
         <li>
-          <ReactRouterLogo className="size-9" />
+          <PostgreSqlLogo className="size-9" />
+        </li>
+        <li>
+          <RedisLogo className="size-9" />
         </li>
       </>
     ),
-    codeLink: "https://github.com/MuchaSsak/clickme-website",
-    liveLink: "https://react-clickme.vercel.app",
-    thumbnailImgUrl: "/assets/pictures/clickme_website_thumbnail.jpg",
+    codeLink: "https://github.com/Saimandsroy/linkmanagementbackend",
+    liveLink: "https://linkmanagement.net",
+    thumbnailImgUrl: "/assets/pictures/linkmanagement_thumbnail.png",
   },
   {
-    Title: () => t`Home Budget`,
+    Title: () => t`KuberFashion`,
     Description: () =>
-      t`An SPA for managing your finances by taking track of your budgets and expenses. Utilizes the browser's localStorage and advanced UI state using React's Context API with useReducer 💸`,
+      t`A production-ready full-stack e-commerce platform for clothing brands with product catalogs, shopping carts, order workflows, admin portal — Dockerized and live on Google Cloud VPS.`,
     Icons: () => (
       <>
-        <li>
-          <JavaScriptLogo className="size-9" />
-        </li>
         <li>
           <ReactLogo className="size-9" />
         </li>
         <li>
-          <TailwindCssLogo className="size-9" />
+          <JavaLogo className="size-9" />
         </li>
         <li>
-          <ReactRouterLogo className="size-9" />
+          <SpringBootLogo className="size-9" />
+        </li>
+        <li>
+          <PostgreSqlLogo className="size-9" />
         </li>
       </>
     ),
-    codeLink: "https://github.com/MuchaSsak/home-budget",
-    liveLink: "https://mm-homebudget.vercel.app",
-    thumbnailImgUrl: "/assets/pictures/home_budget_thumbnail.jpg",
+    codeLink: "https://github.com/Saimandsroy/kuberFashion_backend_2025",
+    liveLink: "https://kuberfashions.in",
+    thumbnailImgUrl: "/assets/pictures/kuberfashion_thumbnail.png",
   },
   {
-    Title: () => t`LingoType`,
+    Title: () => t`OutreachOS — prane.one`,
     Description: () =>
-      t`A foreign language learning app for vocabulary reinforcement by typing ⌨️`,
+      t`An AI-powered outbound automation platform managing email & WhatsApp campaigns at scale — CSV lead uploads, Google Gemini AI copy generation, inbox warmup, and multi-sender management.`,
     Icons: () => (
       <>
-        <li>
-          <ThreeJsLogo className="size-9" />
-        </li>
         <li>
           <NextJsLogo className="size-9" />
-        </li>
-        <li>
-          <TanstackQueryLogo className="size-9" />
-        </li>
-      </>
-    ),
-    codeLink: "https://github.com/MuchaSsak/lingotype",
-    liveLink: "https://lingotype.vercel.app",
-    thumbnailImgUrl: "/assets/pictures/lingotype_thumbnail.jpg",
-  },
-
-  {
-    Title: () => t`Youth Work Synergy`,
-    Description: () => (
-      <>
-        <span>{t`A website including 3D features made to promote a beautiful organiation in Luxemburg `}</span>
-        <span className="font-emoji">🇱🇺</span>
-      </>
-    ),
-    Icons: () => (
-      <>
-        <li>
-          <ThreeJsLogo className="size-9" />
-        </li>
-        <li>
-          <NextJsLogo className="size-9" />
-        </li>
-        <li>
-          <TailwindCssLogo className="size-9" />
-        </li>
-      </>
-    ),
-    codeLink: "https://github.com/MuchaSsak/yws.lu",
-    liveLink: "https://yws.lu",
-    thumbnailImgUrl: "/assets/pictures/yws_lu_thumbnail.jpg",
-  },
-  {
-    Title: () => t`Enrollo`,
-    Description: () =>
-      t`An affiliate marketing application built in Expo for the web, Android and iOS`,
-    Icons: () => (
-      <>
-        <li>
-          <ExpoLogo className="size-9" />
-        </li>
-        <li>
-          <ReactLogo className="size-9" />
-        </li>
-        <li>
-          <TailwindCssLogo className="size-9" />
-        </li>
-      </>
-    ),
-    codeLink: null,
-    liveLink: "https://enrollo.pl",
-    thumbnailImgUrl: "/assets/pictures/enrollo_thumbnail.jpg",
-  },
-  {
-    Title: () => t`2D Space Portfolio`,
-    Description: () =>
-      t`A fully animated Next.js portfolio with the help of ThreeJS, Framer Motion, shadcn/ui and clever usage of .webm videos 🌌`,
-    Icons: () => (
-      <>
-        <li>
-          <ThreeJsLogo className="size-9" />
-        </li>
-        <li>
-          <NextJsLogo className="size-9" />
-        </li>
-        <li>
-          <TailwindCssLogo className="size-9" />
-        </li>
-      </>
-    ),
-    codeLink: "https://github.com/MuchaSsak/2d-space-folio",
-    liveLink: OLD_PORTFOLIO_WEBSITE_LINK,
-    thumbnailImgUrl: "/assets/pictures/space_portfolio_thumbnail.jpg",
-  },
-  {
-    Title: () => t`Beniaminek 03 Screensaver`,
-    Description: () =>
-      t`3D screensaver for a sports club using GPGPU computing in R3F ⚡`,
-    Icons: () => (
-      <>
-        <li>
-          <ThreeJsLogo className="size-9" />
         </li>
         <li>
           <TypeScriptLogo className="size-9" />
         </li>
         <li>
+          <PostgreSqlLogo className="size-9" />
+        </li>
+        <li>
+          <RedisLogo className="size-9" />
+        </li>
+      </>
+    ),
+    codeLink: "https://github.com/Saimandsroy/PLECOS_WEB2025",
+    liveLink: "https://prane.one",
+    thumbnailImgUrl: "/assets/pictures/metersquared_thumbnail.png",
+  },
+  {
+    Title: () => t`ChhotuBot.com`,
+    Description: () =>
+      t`An AI-powered chatbot platform with seamless user subscriptions — built React frontend, integrated full PhonePe payment gateway, and connected AI bot response workflows via REST APIs.`,
+    Icons: () => (
+      <>
+        <li>
+          <ReactLogo className="size-9" />
+        </li>
+        <li>
+          <NodeJsLogo className="size-9" />
+        </li>
+        <li>
+          <PhonePeLogo className="size-9" />
+        </li>
+        <li>
+          <ApiLogo className="size-9" />
+        </li>
+      </>
+    ),
+    codeLink: "https://github.com/Saimandsroy",
+    liveLink: "https://chhotubot.com",
+    thumbnailImgUrl: "/assets/pictures/outreachos_thumbnail.png",
+  },
+  {
+    Title: () => t`MeterSquared — Interior Design Platform`,
+    Description: () =>
+      t`A modern interior home design platform built in Next.js, helping users explore curated design inspirations, connect with designers, and visualize their dream spaces.`,
+    Icons: () => (
+      <>
+        <li>
+          <NextJsLogo className="size-9" />
+        </li>
+        <li>
           <ReactLogo className="size-9" />
         </li>
         <li>
@@ -579,8 +467,8 @@ export const PROJECTS_LIST: ProjectData[] = [
         </li>
       </>
     ),
-    codeLink: "https://github.com/MuchaSsak/beniaminek03-screensaver",
-    liveLink: "https://beniaminek03-screensaver.vercel.app",
-    thumbnailImgUrl: "/assets/pictures/beniaminek03_screensaver_thumbnail.jpg",
+    codeLink: "https://github.com/Saimandsroy",
+    liveLink: "https://metersquared.in",
+    thumbnailImgUrl: "/assets/pictures/chhotubot_thumbnail.png",
   },
 ];

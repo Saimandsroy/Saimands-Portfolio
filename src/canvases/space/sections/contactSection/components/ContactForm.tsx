@@ -111,7 +111,7 @@ function ContactForm() {
         ref={(el) => {
           materialsToHideRefs.current.push(el as HTMLHeadingElement);
         }}
-        className="w-max text-blue-gradient text-center opacity-0 text-7xl flex items-center gap-2 font-bold"
+        className="w-max text-blue-gradient text-center opacity-0 text-5xl sm:text-7xl flex items-center gap-2 font-bold"
       >
         <span>{t`Contact`}</span>
       </h3>
@@ -120,7 +120,7 @@ function ContactForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-8 mt-8 md:w-[27.5rem] max-md:w-72"
+          className="space-y-6 sm:space-y-8 mt-6 sm:mt-8 w-[min(22rem,calc(100vw-2rem))] md:w-[27.5rem]"
           ref={formRef}
         >
           {/* Name */}

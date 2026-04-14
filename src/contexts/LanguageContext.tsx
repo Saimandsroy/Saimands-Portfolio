@@ -36,7 +36,11 @@ export default function LanguageProvider({
   const [language, setLanguage] = useState<LanguageValue>(() => {
     // Load from localStorage
     if (!localStorage.getItem("language")) return defaultLanguage;
-    else return JSON.parse(localStorage.getItem("language")!);
+
+    const savedLanguage = JSON.parse(localStorage.getItem("language")!);
+    return AVAILABLE_LANGUAGES.find(
+      (availableLanguage) => availableLanguage.value === savedLanguage
+    )?.value ?? "en";
   });
 
   useEffect(() => {

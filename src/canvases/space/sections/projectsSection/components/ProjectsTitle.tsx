@@ -27,7 +27,7 @@ function ProjectsTitle() {
         ref={(el) => {
           materialsToHideRefs.current.push(el as HTMLHeadingElement);
         }}
-        className="w-max text-yellow-gradient text-center opacity-0 text-8xl flex items-center gap-2 font-bold"
+        className="w-max text-yellow-gradient text-center opacity-0 text-5xl sm:text-8xl flex items-center gap-2 font-bold"
       >
         <span>{t`Projects`}</span>
       </h3>

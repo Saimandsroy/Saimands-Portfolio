@@ -8,9 +8,9 @@ function useLoadJobExperienceListAsteroidsTextures() {
   const { anisotropy } = useSettingsContext();
 
   const loadedTextures = useTexture([
-    "/assets/textures/asteroids/beniaminek_logo.png",
-    "/assets/textures/asteroids/esc_logo.png",
-    "/assets/textures/asteroids/ruigrok_logo.png",
+    "/assets/textures/asteroids/plecos-logo.png",
+    "/assets/textures/asteroids/femur-logo.jpg",
+    "/assets/textures/asteroids/dextop-logo.png",
   ]);
 
   const textures = useMemo(() => {
@@ -25,6 +25,14 @@ function useLoadJobExperienceListAsteroidsTextures() {
     beniaminekTexture.anisotropy = anisotropy;
     escTexture.anisotropy = anisotropy;
     ruigrokTexture.anisotropy = anisotropy;
+
+    // Improve logo clarity on angled floating planes
+    beniaminekTexture.minFilter = THREE.LinearMipmapLinearFilter;
+    beniaminekTexture.magFilter = THREE.LinearFilter;
+    escTexture.minFilter = THREE.LinearMipmapLinearFilter;
+    escTexture.magFilter = THREE.LinearFilter;
+    ruigrokTexture.minFilter = THREE.LinearMipmapLinearFilter;
+    ruigrokTexture.magFilter = THREE.LinearFilter;
 
     // Update the textures
     beniaminekTexture.needsUpdate = true;
