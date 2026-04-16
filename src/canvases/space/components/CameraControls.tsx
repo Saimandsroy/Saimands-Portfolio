@@ -589,6 +589,7 @@ function CameraControls() {
         break;
       }
     }
+
   }, [
     camera,
     scrollProgress,

@@ -2,11 +2,12 @@ import { LensFlare } from "@andersonmancini/lens-flare";
 import { Canvas } from "@react-three/fiber";
 import { EffectComposer } from "@react-three/postprocessing";
 import { Perf } from "r3f-perf";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 
 // Lazy imports for code splitting
 import useLensFlareDebugControls from "@/canvases/hooks/useLensFlareDebugControls";
 import { useSettingsContext } from "@/contexts/SettingsContext";
+import { useScrollContext } from "@/contexts/ScrollContext";
 const CameraControls = lazy(
   () => import("@/canvases/space/components/CameraControls")
 );
@@ -45,8 +46,33 @@ const ContactSection = lazy(
     import("@/canvases/space/sections/contactSection/components/ContactSection")
 );
 
+function LazySection({
+  component: Component,
+  shouldLoad,
+}: {
+  component: React.LazyExoticComponent<() => React.JSX.Element>;
+  shouldLoad: boolean;
+}) {
+  const [hasLoaded, setHasLoaded] = useState(shouldLoad);
+
+  useEffect(() => {
+    if (shouldLoad) {
+      setHasLoaded(true);
+    }
+  }, [shouldLoad]);
+
+  if (!hasLoaded) return null;
+
+  return (
+    <Suspense fallback={null}>
+      <Component />
+    </Suspense>
+  );
+}
+
 function SpaceCanvas() {
   const { toneMapping, depth, antialias, multisampling } = useSettingsContext();
+  const { scrollProgress } = useScrollContext();
   const lensFlareControls = useLensFlareDebugControls();
   const isDebugMode = window.location.hash === "#debug";
 
@@ -92,11 +118,20 @@ function SpaceCanvas() {
           <StarsModel />
 
           {/* Sections */}
-          <HeroSection />
-          <JobExperienceSection />
-          <CertificatesSection />
-          <ProjectsSection />
-          <ContactSection />
+          <LazySection component={HeroSection} shouldLoad={scrollProgress >= 0} />
+          <LazySection
+            component={JobExperienceSection}
+            shouldLoad={scrollProgress >= 2}
+          />
+          <LazySection
+            component={CertificatesSection}
+            shouldLoad={scrollProgress >= 5}
+          />
+          <LazySection
+            component={ProjectsSection}
+            shouldLoad={scrollProgress >= 8}
+          />
+          <LazySection component={ContactSection} shouldLoad={scrollProgress >= 10} />
         </SpaceContextProvider>
       </Suspense>
     </Canvas>

@@ -61,7 +61,7 @@ function CertificatesList() {
         ref={(el) => {
           materialsToHideRefs.current.push(el as HTMLDivElement);
         }}
-        className="flex flex-col left-[60%] absolute py-[27.5rem] gap-4 opacity-0"
+        className="flex flex-col absolute left-1/2 -translate-x-1/2 sm:left-[60%] sm:translate-x-0 py-[22rem] sm:py-[27.5rem] gap-3 sm:gap-4 opacity-0 items-center sm:items-stretch w-[min(100vw-1rem,26rem)] sm:w-auto px-2 sm:px-0"
         // Adding event listener for it to bubble up
         onScroll={() => {}}
       >
@@ -77,7 +77,7 @@ function CertificatesList() {
           )
         )}
         <Button
-          className="text-muted-foreground"
+          className="text-muted-foreground w-full sm:w-auto"
           size="sm"
           onClick={handleToggleExpandRelevant}
           variant="ghost"

@@ -32,7 +32,7 @@ function ProjectsItemCard({
   return (
     <Card
       className={cn(
-        "w-[min(22rem,calc(100vw-2rem))] sm:w-[30rem] lg:w-[36rem] [&:hover_img]:scale-110 gap-4 overflow-hidden bg-card/50 relative backdrop-blur-sm hover:[box-shadow:0_0_1rem_var(--primary),0_0_0.125rem_var(--foreground)] transition-[box-shadow] p-0",
+        "w-[min(18rem,calc(100vw-1.5rem))] xs:w-[min(20rem,calc(100vw-1.5rem))] sm:w-[30rem] lg:w-[36rem] [&:hover_img]:scale-110 gap-4 overflow-hidden bg-card/50 relative backdrop-blur-sm hover:[box-shadow:0_0_1rem_var(--primary),0_0_0.125rem_var(--foreground)] transition-[box-shadow] p-0",
         scrollProgress !== projectsListScrollProgress
           ? "pointer-events-none select-none"
           : "pointer-events-auto",
@@ -44,7 +44,7 @@ function ProjectsItemCard({
         target="_blank"
         href={liveLink}
         className={cn(
-          "h-48 sm:h-64 w-full overflow-hidden relative",
+          "h-40 xs:h-44 sm:h-64 w-full overflow-hidden relative",
           scrollProgress !== projectsListScrollProgress
             ? "pointer-events-none"
             : "pointer-events-auto",
@@ -52,30 +52,30 @@ function ProjectsItemCard({
       >
         <img
           src={thumbnailImgUrl}
-          className="h-48 sm:h-64 w-full transition-transform absolute left-0 top-0 duration-300 object-cover"
+          className="h-40 xs:h-44 sm:h-64 w-full transition-transform absolute left-0 top-0 duration-300 object-cover will-change-transform"
         />
       </a>
 
       <CardHeader>
         {/* Icons */}
-        <ul className="flex items-center gap-3 pt-2">
+        <ul className="flex items-center gap-2 sm:gap-3 pt-2 flex-wrap">
           <Icons />
         </ul>
 
         {/* Title */}
-        <CardTitle className="text-2xl sm:text-4xl max-w-[90%] pt-3">
+        <CardTitle className="text-xl xs:text-2xl sm:text-4xl max-w-[90%] pt-3">
           <Title />
         </CardTitle>
       </CardHeader>
 
       <CardContent>
         {/* Description */}
-        <CardDescription className="text-base sm:text-xl text-card-foreground/80">
+        <CardDescription className="text-sm xs:text-base sm:text-xl text-card-foreground/80">
           <Description />
         </CardDescription>
       </CardContent>
 
-      <CardFooter className="justify-between gap-3 flex-wrap text-muted-foreground pb-6 pt-2">
+      <CardFooter className="justify-between gap-3 flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center text-muted-foreground pb-5 sm:pb-6 pt-2">
         {/* Soure code link button */}
         {codeLink && (
           <a
@@ -90,7 +90,7 @@ function ProjectsItemCard({
           >
             <Button
               variant="outline"
-              className="p-4 sm:p-7 text-foreground rounded-xl text-base sm:text-xl"
+              className="w-full sm:w-auto p-4 sm:p-7 text-foreground rounded-xl text-sm xs:text-base sm:text-xl"
               tabIndex={-1}
             >{t`Source code 💻`}</Button>
           </a>
@@ -109,7 +109,7 @@ function ProjectsItemCard({
         >
           <Button
             className={
-              "p-4 sm:p-7 bg-primary/60 border-[color-mix(in_srgb,var(--primary)_80%,var(--foreground))] border rounded-xl text-base sm:text-xl"
+              "w-full sm:w-auto p-4 sm:p-7 bg-primary/60 border-[color-mix(in_srgb,var(--primary)_80%,var(--foreground))] border rounded-xl text-sm xs:text-base sm:text-xl"
             }
             tabIndex={-1}
           >{t`View it live 🚀`}</Button>

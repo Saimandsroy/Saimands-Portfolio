@@ -20,9 +20,9 @@ function CertificatesItemCard({
   const { scrollProgress } = useScrollContext();
 
   return (
-    <Card className="w-[min(21rem,calc(100vw-2rem))] sm:w-[26rem] z-10 relative bg-card/50 gap-2 backdrop-blur-sm hover:[box-shadow:0_0_0.5rem_#FFFC54] transition-[box-shadow]">
+    <Card className="w-[min(18rem,calc(100vw-1.5rem))] xs:w-[min(20rem,calc(100vw-1.5rem))] sm:w-[26rem] z-10 relative bg-card/50 gap-2 backdrop-blur-sm hover:[box-shadow:0_0_0.5rem_#FFFC54] transition-[box-shadow]">
       <CardHeader>
-        <CardTitle className="text-lg sm:text-2xl max-w-[90%] pr-10">
+        <CardTitle className="text-base xs:text-lg sm:text-2xl max-w-[90%] pr-10 leading-snug">
           <Title />
         </CardTitle>
 
@@ -31,7 +31,7 @@ function CertificatesItemCard({
         </div>
       </CardHeader>
 
-      <CardFooter className="justify-between gap-2 flex-col items-start sm:flex-row sm:items-center text-muted-foreground">
+      <CardFooter className="justify-between gap-2 flex-col items-start sm:flex-row sm:items-center text-muted-foreground text-sm sm:text-base">
         <a
           className="hover:text-[#FFFC54] transition-colors hover:underline focus-visible:underline focus-visible:text-[#FFFC54]"
           href={websiteLink}
@@ -43,7 +43,7 @@ function CertificatesItemCard({
           {authorName}
         </a>
 
-        <span>
+        <span className="break-words">
           <StartedDate />
           {" - "}
           <EndedDate />

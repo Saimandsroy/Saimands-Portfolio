@@ -111,7 +111,7 @@ function ContactForm() {
         ref={(el) => {
           materialsToHideRefs.current.push(el as HTMLHeadingElement);
         }}
-        className="w-max text-blue-gradient text-center opacity-0 text-5xl sm:text-7xl flex items-center gap-2 font-bold"
+        className="w-max max-w-[min(100vw-1.5rem,24rem)] text-blue-gradient text-center opacity-0 text-3xl xs:text-4xl sm:text-7xl flex items-center gap-2 font-bold"
       >
         <span>{t`Contact`}</span>
       </h3>
@@ -120,7 +120,7 @@ function ContactForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-6 sm:space-y-8 mt-6 sm:mt-8 w-[min(22rem,calc(100vw-2rem))] md:w-[27.5rem]"
+          className="space-y-5 sm:space-y-8 mt-5 sm:mt-8 w-[min(100vw-1.5rem,22rem)] xs:w-[min(100vw-1.5rem,24rem)] md:w-[27.5rem]"
           ref={formRef}
         >
           {/* Name */}
@@ -148,7 +148,7 @@ function ContactForm() {
                         ? -1
                         : undefined
                     }
-                    className="focus-visible:ring-[#1f2cdd] opacity-0 focus-visible:border-[#3f5fff]"
+                    className="focus-visible:ring-[#1f2cdd] opacity-0 focus-visible:border-[#3f5fff] text-sm sm:text-base"
                     name="subject"
                   />
                 </FormControl>
@@ -174,7 +174,7 @@ function ContactForm() {
                   <Textarea
                     placeholder={t`I am writing to you because...`}
                     {...field}
-                    className="opacity-0 focus-visible:ring-[#1f2cdd] focus-visible:border-[#3f5fff] resize-none overflow-y-scroll h-48"
+                    className="opacity-0 focus-visible:ring-[#1f2cdd] focus-visible:border-[#3f5fff] resize-none overflow-y-scroll h-40 sm:h-48 text-sm sm:text-base"
                     ref={(el) => {
                       materialsToHideRefs.current.push(
                         el as HTMLTextAreaElement
@@ -195,7 +195,7 @@ function ContactForm() {
 
           {/* Submit */}
           <Button
-            className="opacity-0 w-full bg-[#273de6] focus-visible:ring-[#3f5fff] hover:bg-[#1c30c4]"
+            className="opacity-0 w-full bg-[#273de6] focus-visible:ring-[#3f5fff] hover:bg-[#1c30c4] text-sm sm:text-base"
             type="submit"
             ref={(el) => {
               materialsToHideRefs.current.push(el as HTMLButtonElement);

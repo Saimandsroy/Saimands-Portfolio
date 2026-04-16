@@ -153,6 +153,10 @@
   @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
 }
 
+@utility will-change-transform {
+  will-change: transform;
+}
+
 /* Animations */
 @keyframes pulse {
   0%,

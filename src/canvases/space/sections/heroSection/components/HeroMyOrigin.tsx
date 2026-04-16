@@ -24,7 +24,7 @@ function HeroMyOrigin() {
   return (
     <group>
       <Html
-        className="select-none flex flex-col items-center pointer-events-none px-4"
+        className="select-none flex flex-col items-center pointer-events-none px-3 sm:px-4"
         center
         position={[0.2, -0.05, -16.26]}
       >
@@ -33,7 +33,7 @@ function HeroMyOrigin() {
           ref={(el) => {
             materialsToHideRefs.current.push(el as HTMLHeadingElement);
           }}
-          className="text-center text-gold-gradient opacity-0 text-3xl sm:text-4xl flex items-center gap-2 font-bold"
+          className="text-center text-gold-gradient opacity-0 text-2xl xs:text-3xl sm:text-4xl flex items-center gap-2 font-bold max-w-[min(100vw-1.5rem,22rem)]"
         >
           <span>{t`I originate from India`}</span>
           <span className="font-emoji text-foreground text-2xl">🇮🇳</span>
@@ -44,7 +44,7 @@ function HeroMyOrigin() {
           ref={(el) => {
             materialsToHideRefs.current.push(el as HTMLHeadingElement);
           }}
-          className="font-semibold text-gold-gradient text-xl sm:text-2xl opacity-0 leading-7 tracking-[-0.0125em] py-4 text-center flex flex-col items-center"
+          className="font-semibold text-gold-gradient text-base xs:text-lg sm:text-2xl opacity-0 leading-6 sm:leading-7 tracking-[-0.0125em] py-3 sm:py-4 text-center flex flex-col items-center max-w-[min(100vw-1.5rem,24rem)]"
         >
           <span>{t`But my code is already running across the globe 🌍`}</span>
         </h4>
@@ -54,7 +54,7 @@ function HeroMyOrigin() {
           ref={(el) => {
             materialsToHideRefs.current.push(el as HTMLHeadingElement);
           }}
-          className="font-semibold text-gold-gradient opacity-0 text-lg sm:text-2xl leading-7 tracking-[-0.0125em] w-[min(24rem,calc(100vw-2rem))] sm:w-[28rem] text-center"
+          className="font-semibold text-gold-gradient opacity-0 text-sm xs:text-base sm:text-2xl leading-6 sm:leading-7 tracking-[-0.0125em] w-[min(100vw-1.5rem,20rem)] xs:w-[min(100vw-1.5rem,24rem)] sm:w-[28rem] text-center"
         >
           <span>{t`Check out my `}</span>
           <span>

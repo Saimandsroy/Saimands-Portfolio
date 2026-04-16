@@ -38,7 +38,7 @@ function JobExperienceListInfoText() {
           ref={(el) => {
             materialsToHideRefs.current.push(el as HTMLHeadingElement);
           }}
-          className="w-max text-gold-gradient text-center opacity-0 text-xl flex items-center gap-2 font-bold"
+          className="w-max max-w-[min(100vw-1.5rem,22rem)] text-gold-gradient text-center opacity-0 text-sm xs:text-base sm:text-xl flex items-center gap-2 font-bold"
         >
           {t`Click on the asteroids for more details!`}
         </h3>

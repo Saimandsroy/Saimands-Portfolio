@@ -1,11 +1,14 @@
 import { useLingui } from "@lingui/react/macro";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { useScrollContext } from "@/contexts/ScrollContext";
 import { useSettingsContext } from "@/contexts/SettingsContext";
 import { AVAILABLE_SCROLLING_SECTIONS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function ScrollIndicator() {
   const { t } = useLingui();
@@ -15,6 +18,8 @@ function ScrollIndicator() {
 
   // GSAP animations
   useEffect(() => {
+    const existingScrollTriggers = ScrollTrigger.getAll();
+    const ctx = gsap.context(() => {
     /**
      * On start experience animations
      */
@@ -26,17 +31,29 @@ function ScrollIndicator() {
       duration: 2,
       delay: 3.25,
     });
+    }, scrollIndicatorContainerRef);
+
+    return () => {
+      ctx.revert();
+      gsap.killTweensOf(scrollIndicatorContainerRef.current);
+
+      ScrollTrigger.getAll().forEach((trigger) => {
+        if (!existingScrollTriggers.includes(trigger)) {
+          trigger.kill();
+        }
+      });
+    };
   }, [hasStartedExperience]);
 
   return (
     <div
       ref={scrollIndicatorContainerRef}
-      className="fixed opacity-0 bottom-2 left-1/2 z-50 -translate-x-1/2 flex flex-col items-center gap-1 select-none"
+      className="fixed opacity-0 bottom-2 left-1/2 z-50 -translate-x-1/2 flex flex-col items-center gap-1 select-none will-change-transform"
     >
       {/* Scroll text */}
       <span
         className={cn(
-          "tracking-widest transition-opacity duration-500 [transition-timing-function:ease] text-xs",
+          "tracking-widest transition-opacity duration-500 [transition-timing-function:ease] text-xs will-change-transform",
           scrollProgress > 0 ? "" : "[animation:pulse_5s_infinite]",
           scrollProgress > 0 ? "opacity-0" : "opacity-100"
         )}
@@ -47,7 +64,7 @@ function ScrollIndicator() {
       {/* Sections indicators */}
       <div
         className={cn(
-          "flex items-center justify-center gap-1 transition-opacity duration-500 [transition-timing-function:ease]",
+          "flex items-center justify-center gap-1 transition-opacity duration-500 [transition-timing-function:ease] will-change-transform",
           scrollProgress > 0 ? "opacity-100" : "opacity-0"
         )}
       >

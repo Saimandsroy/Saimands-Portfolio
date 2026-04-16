@@ -10,7 +10,7 @@ function useLoadEarthTextures() {
   const loadedTextures = useTexture([
     "/assets/textures/earth/2k_earth_daymap.jpg",
     "/assets/textures/earth/2k_earth_nightmap.jpg",
-    "/assets/textures/earth/2k_earth_specular_clouds.jpg",
+    "/assets/textures/earth/2k_earth_specular_clouds.webp",
   ]);
 
   const textures = useMemo(() => {

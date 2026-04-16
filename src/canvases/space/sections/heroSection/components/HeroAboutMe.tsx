@@ -18,12 +18,12 @@ function HeroAboutMe() {
   return (
     <group>
       {/* Title */}
-      <Html className="select-none pointer-events-none px-4" position={[1, 3, -16]}>
+      <Html className="select-none pointer-events-none px-3 sm:px-4" position={[1, 3, -16]}>
         <h1
           ref={(el) => {
             materialsToHideRefs.current.push(el as HTMLHeadingElement);
           }}
-          className="opacity-0 text-gold-gradient text-4xl sm:text-6xl font-bold pb-4"
+          className="opacity-0 text-gold-gradient text-3xl xs:text-4xl sm:text-6xl font-bold pb-3 sm:pb-4 max-w-[min(100vw-1.5rem,24rem)]"
         >
           {t`About me `}
           <span className="font-emoji text-foreground">👋</span>
@@ -34,7 +34,7 @@ function HeroAboutMe() {
           ref={(el) => {
             materialsToHideRefs.current.push(el as HTMLParagraphElement);
           }}
-          className="opacity-0 text-gold-gradient text-base sm:text-xl font-semibold w-[min(22rem,calc(100vw-2rem))] sm:w-sm flex flex-col gap-4"
+          className="opacity-0 text-gold-gradient text-sm xs:text-base sm:text-xl font-semibold w-[min(100vw-1.5rem,18rem)] xs:w-[min(100vw-1.5rem,22rem)] sm:w-sm flex flex-col gap-3 sm:gap-4 leading-relaxed"
         >
           <span>
             {t`My name's Saimands Roy and I'm passionate about building real-world tech that actually matters. Currently, I'm a 3rd year Computer Science Engineering student at ITGGV Bilaspur, on a mission to blend software engineering with artificial intelligence.`}

@@ -2,6 +2,7 @@ import { useLingui } from "@lingui/react/macro";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import useSound from "use-sound";
 
 import musicSound from "@/assets/music/music.ogg";
@@ -13,6 +14,8 @@ import LanguageSettingButton from "@/components/LanguageSettingButton";
 import { Button } from "@/components/ui/button";
 import { useSettingsContext } from "@/contexts/SettingsContext";
 import { cn } from "@/lib/utils";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function StartupScreen() {
   const { t } = useLingui();
@@ -50,6 +53,8 @@ function StartupScreen() {
 
   // GSAP animations
   useEffect(() => {
+    const existingScrollTriggers = ScrollTrigger.getAll();
+    const ctx = gsap.context(() => {
     /**
      * On entry animations
      */
@@ -124,6 +129,25 @@ function StartupScreen() {
         duration: 2,
       })
       .to(rightOverlayPanelRef.current, { display: "none" });
+    }, startupScreenContainerRef);
+
+    return () => {
+      ctx.revert();
+      gsap.killTweensOf([
+        startupScreenContainerRef.current,
+        settingsButtonsContainerRef.current,
+        loadingTextContainerRef.current,
+        backgroundImageRef.current,
+        leftOverlayPanelRef.current,
+        rightOverlayPanelRef.current,
+      ]);
+
+      ScrollTrigger.getAll().forEach((trigger) => {
+        if (!existingScrollTriggers.includes(trigger)) {
+          trigger.kill();
+        }
+      });
+    };
   }, [
     hasStartedExperience,
     hasLoadedBackgroundImage,
@@ -133,21 +157,30 @@ function StartupScreen() {
 
   // Set hasLoadedBackgroundImage on image load
   useEffect(() => {
-    backgroundImageRef.current.addEventListener("load", () =>
-      setHasLoadedBackgroundImage(true),
-    );
+    const backgroundImage = backgroundImageRef.current;
+    if (!backgroundImage) return;
+
+    function handleBackgroundImageLoad() {
+      setHasLoadedBackgroundImage(true);
+    }
+
+    backgroundImage.addEventListener("load", handleBackgroundImageLoad);
+    if (backgroundImage.complete) handleBackgroundImageLoad();
+
+    return () =>
+      backgroundImage.removeEventListener("load", handleBackgroundImageLoad);
   }, []);
 
   return (
     <div
       ref={startupScreenContainerRef}
-      className="w-screen h-screen left-0 top-0 z-50 absolute flex justify-center bg-black items-center"
+      className="w-screen h-screen left-0 top-0 z-50 absolute flex justify-center bg-black items-center will-change-transform"
     >
       {/* Loading text */}
       <div ref={loadingTextContainerRef}>
         <h1
           className={cn(
-            "text-2xl transition-opacity duration-500 ease-in-out select-none pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50",
+            "text-2xl transition-opacity duration-500 ease-in-out select-none pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 will-change-transform",
             hasLoadedBackgroundImage ? "opacity-0!" : "opacity-100!",
           )}
         >
@@ -155,25 +188,25 @@ function StartupScreen() {
         </h1>
       </div>
 
-      <div className="opacity-0" ref={settingsButtonsContainerRef}>
+      <div className="opacity-0 will-change-transform" ref={settingsButtonsContainerRef}>
         {/* Settings buttons */}
         <LanguageSettingButton
           sideOffset={32}
           buttonText={t`Language`}
           buttonVariant="ghost"
-          buttonClassName="bg-transparent! w-32 sm:w-[11.5rem] px-2 sm:px-3 h-9 sm:h-10 top-[calc(50%_+_10.4rem)] sm:top-[calc(50%_+_14.8rem)] left-[calc(50%_-_8.5rem)] sm:left-[calc(50%_-_15.25rem)] -translate-x-1/2 fixed [transform:perspective(30rem)_rotateY(-10deg)_rotateX(20deg)_skewX(-5deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-lg sm:text-2xl focus-visible:[box-shadow:0_0_3rem_var(--foreground)] hover:[box-shadow:0_0_3rem_var(--foreground)]"
+          buttonClassName="bg-transparent! w-32 sm:w-[11.5rem] px-2 sm:px-3 h-9 sm:h-10 top-[calc(50%_+_10.4rem)] sm:top-[calc(50%_+_14.8rem)] left-[calc(50%_-_8.5rem)] sm:left-[calc(50%_-_15.25rem)] -translate-x-1/2 fixed [transform:perspective(30rem)_rotateY(-10deg)_rotateX(20deg)_skewX(-5deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-lg sm:text-2xl focus-visible:[box-shadow:0_0_3rem_var(--foreground)] hover:[box-shadow:0_0_3rem_var(--foreground)] will-change-transform"
         />
         <GraphicsSettingButton
           sideOffset={32}
           buttonText={t`Graphics`}
           buttonVariant="ghost"
-          buttonClassName="bg-transparent! w-32 sm:w-[11.5rem] px-2 sm:px-3 h-9 sm:h-10 top-[calc(50%_+_14rem)] sm:top-[calc(50%_+_14.8rem)] left-1/2 -translate-x-1/2 fixed [transform:perspective(30rem)_rotateX(20deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-lg sm:text-2xl focus-visible:[box-shadow:0_0_3rem_var(--foreground)] hover:[box-shadow:0_0_3rem_var(--foreground)]"
+          buttonClassName="bg-transparent! w-32 sm:w-[11.5rem] px-2 sm:px-3 h-9 sm:h-10 top-[calc(50%_+_14rem)] sm:top-[calc(50%_+_14.8rem)] left-1/2 -translate-x-1/2 fixed [transform:perspective(30rem)_rotateX(20deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-lg sm:text-2xl focus-visible:[box-shadow:0_0_3rem_var(--foreground)] hover:[box-shadow:0_0_3rem_var(--foreground)] will-change-transform"
         />
         <AudioSettingButton
           sideOffset={32}
           buttonText={t`Sounds`}
           buttonVariant="ghost"
-          buttonClassName="bg-transparent! w-32 sm:w-[11.5rem] px-2 sm:px-3 h-9 sm:h-10 top-[calc(50%_+_17.6rem)] sm:top-[calc(50%_+_14.8rem)] left-[calc(50%_+_8.5rem)] sm:left-auto sm:right-[calc(50%_-_14.75rem)] translate-x-1/2 fixed [transform:perspective(30rem)_rotateY(10deg)_rotateX(20deg)_skewX(5deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-lg sm:text-2xl focus-visible:[box-shadow:0_0_3rem_var(--foreground)] hover:[box-shadow:0_0_3rem_var(--foreground)]"
+          buttonClassName="bg-transparent! w-32 sm:w-[11.5rem] px-2 sm:px-3 h-9 sm:h-10 top-[calc(50%_+_17.6rem)] sm:top-[calc(50%_+_14.8rem)] left-[calc(50%_+_8.5rem)] sm:left-auto sm:right-[calc(50%_-_14.75rem)] translate-x-1/2 fixed [transform:perspective(30rem)_rotateY(10deg)_rotateX(20deg)_skewX(5deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-lg sm:text-2xl focus-visible:[box-shadow:0_0_3rem_var(--foreground)] hover:[box-shadow:0_0_3rem_var(--foreground)] will-change-transform"
         />
 
         {/* Start button */}
@@ -181,7 +214,7 @@ function StartupScreen() {
           onClick={handleStartExperience}
           disabled={hasStartedExperience}
           variant="ghost"
-          className="text-5xl sm:text-7xl h-24 sm:h-32 w-[18rem] sm:w-[30rem] left-1/2 -translate-x-1/2 top-[calc(50%_+_1.2rem)] sm:top-[calc(50%_+_1.6rem)] fixed bg-transparent! focus-visible:[box-shadow:0_0_10rem_var(--foreground)] hover:[box-shadow:0_0_10rem_var(--foreground)] text-[#084000] focus-visible:text-[#117D00] focus-visible:border-2 focus-visible:border-[#084000] hover:text-[#117D00] font-black tracking-[0.08em] sm:tracking-[0.15em] rounded-full [transform:perspective(30rem)_rotateX(20deg)]"
+          className="text-5xl sm:text-7xl h-24 sm:h-32 w-[18rem] sm:w-[30rem] left-1/2 -translate-x-1/2 top-[calc(50%_+_1.2rem)] sm:top-[calc(50%_+_1.6rem)] fixed bg-transparent! focus-visible:[box-shadow:0_0_10rem_var(--foreground)] hover:[box-shadow:0_0_10rem_var(--foreground)] text-[#084000] focus-visible:text-[#117D00] focus-visible:border-2 focus-visible:border-[#084000] hover:text-[#117D00] font-black tracking-[0.08em] sm:tracking-[0.15em] rounded-full [transform:perspective(30rem)_rotateX(20deg)] will-change-transform"
         >{t`START`}</Button>
       </div>
 
@@ -189,7 +222,7 @@ function StartupScreen() {
       <img
         ref={backgroundImageRef}
         className={cn(
-          "w-[140vw] sm:w-[93.75rem] max-w-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 brightness-0",
+          "w-[140vw] sm:w-[93.75rem] max-w-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 brightness-0 will-change-transform",
         )}
         src="/assets/pictures/startup_screen_background.jpg"
         alt="The control panel of your spaceship which will take you to a tour of Mateusz Muszarski's portfolio"
@@ -202,13 +235,13 @@ function StartupScreen() {
             src="/assets/pictures/startup_screen_door.jpg"
             alt="The door side panels of your spaceship which will take you to a tour of Mateusz Muszarski's portfolio"
             ref={leftOverlayPanelRef}
-            className="h-screen w-[50vw] -scale-x-100 absolute [box-shadow:0_0_1rem_rgba(0,0,0,0.75)] object-cover left-0 -translate-x-full top-0 z-50"
+            className="h-screen w-[50vw] -scale-x-100 absolute [box-shadow:0_0_1rem_rgba(0,0,0,0.75)] object-cover left-0 -translate-x-full top-0 z-50 will-change-transform"
           />
           <img
             src="/assets/pictures/startup_screen_door.jpg"
             alt="The door side panels of your spaceship which will take you to a tour of Mateusz Muszarski's portfolio"
             ref={rightOverlayPanelRef}
-            className="h-screen w-[50vw] absolute object-cover [box-shadow:0_0_1rem_rgba(0,0,0,0.75)] right-0 translate-x-full top-0 z-50"
+            className="h-screen w-[50vw] absolute object-cover [box-shadow:0_0_1rem_rgba(0,0,0,0.75)] right-0 translate-x-full top-0 z-50 will-change-transform"
           />
         </>,
         document.body,

@@ -3,6 +3,14 @@ import CreditsDialogButton from "@/components/CreditsDialogButton";
 import GraphicsSettingButton from "@/components/GraphicsSettingButton";
 import LanguageSettingButton from "@/components/LanguageSettingButton";
 import ResetSettingsDialogButton from "@/components/ResetSettingsDialogButton";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useSettingsContext } from "@/contexts/SettingsContext";
 import {
@@ -21,7 +29,7 @@ function TopBar() {
         <a
           tabIndex={!hasStartedExperience ? -1 : undefined}
           target="_blank"
-          className="opacity-75 hover:opacity-100 focus-visible:opacity-100 hover:scale-110 focus-visible:scale-110 transition-[opacity,scale]"
+          className="opacity-75 hover:opacity-100 focus-visible:opacity-100 hover:scale-110 focus-visible:scale-110 transition-[opacity,scale] will-change-transform"
           href={GITHUB_LINK}
         >
           <Avatar className="size-6">
@@ -43,7 +51,7 @@ function TopBar() {
         </a>
       </div>
 
-      <div className="flex items-center gap-1 sm:gap-1.5 shrink-0">
+      <div className="hidden sm:flex items-center gap-1 sm:gap-1.5 shrink-0">
         {/* Settings buttons */}
         <LanguageSettingButton
           buttonClassName="size-7 p-1.5 text-[0.65rem] sm:size-8 sm:p-2 sm:text-xs"
@@ -63,6 +71,48 @@ function TopBar() {
         <CreditsDialogButton />
         <ResetSettingsDialogButton />
       </div>
+
+      <Dialog>
+        <DialogTrigger asChild>
+          <Button
+            tabIndex={!hasStartedExperience ? -1 : undefined}
+            variant="outline"
+            size="icon"
+            className="sm:hidden size-8 shrink-0"
+          >
+            ☰
+          </Button>
+        </DialogTrigger>
+
+        <DialogContent className="sm:hidden z-[500000001] max-w-[calc(100%-1rem)] p-4">
+          <DialogHeader>
+            <DialogTitle className="sr-only">Menu</DialogTitle>
+          </DialogHeader>
+
+          <div className="grid grid-cols-3 gap-2">
+            <LanguageSettingButton
+              buttonClassName="w-full h-10 text-xs"
+              buttonVariant="outline"
+              tabIndex={!hasStartedExperience ? -1 : undefined}
+            />
+            <GraphicsSettingButton
+              buttonClassName="w-full h-10 text-xs"
+              buttonVariant="outline"
+              tabIndex={!hasStartedExperience ? -1 : undefined}
+            />
+            <AudioSettingButton
+              buttonClassName="w-full h-10 text-xs"
+              buttonVariant="outline"
+              tabIndex={!hasStartedExperience ? -1 : undefined}
+            />
+          </div>
+
+          <div className="grid grid-cols-2 gap-2">
+            <CreditsDialogButton />
+            <ResetSettingsDialogButton />
+          </div>
+        </DialogContent>
+      </Dialog>
     </nav>
   );
 }
